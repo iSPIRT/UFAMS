@@ -13,9 +13,9 @@ The proposed distribution of responsibilities by entity to ensure a secure archi
   1. KYC
   1. Certificate issuance
   1. Certificate revocation & rotation
-    1. Receipt of of Rotation/Revocation requests
-    1. Forwarding approved Rotation/Revocation requests to Certifying Authority
-    1. RPAS registration, deregistration, flight log submission, etc. 
+      1. Receipt of of Rotation/Revocation requests
+      1. Forwarding approved Rotation/Revocation requests to Certifying Authority
+      1. RPAS registration, deregistration, flight log submission, etc. 
 
 ## Certifying Authority (e.g. e-Mudhra, etc.)
 1. KYC
