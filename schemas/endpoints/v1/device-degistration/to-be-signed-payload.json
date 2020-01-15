@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "transactionId": {
+		"type": "string",
+		"description": "Transaction identifier (of max length 50) entered by 
+		  manufacturer, which is also returned as part of response as is and is
+		  useful for linking transactions full round trip across system"
+	  },
+	  "drone": {
+		"type": "object",
+		"properties": {
+		  "deviceId": {
+			"type": "string",
+			"description": "Device Id of drone to deregister"
+		  }
+		},
+		"required": [
+		  "deviceId"
+		]
+	  }
+	},
+	"required": [
+	  "transactionId",
+	  "drone"
+	]
+}
+  
