@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "payload": {
+		"description": "Base64 encoded value of Registration Data Payload",
+		"type": "string"
+	  },
+	  "protected": {
+		"description": "Base64 encoded value of JWS Protected Header",
+		"type": "string"
+	  },
+	  "header": {
+		"type": "object",
+		"properties": {
+		  "signature": {
+			"type": "string"
+		  }
+		},
+		"required": [
+		  "signature"
+		]
+	  }
+	},
+	"required": [
+	  "payload",
+	  "protected",
+	  "header"
+	]
+ }
+  

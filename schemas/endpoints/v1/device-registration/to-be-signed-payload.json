@@ -1,0 +1,46 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "transactionId": {
+		"type": "string",
+		"description": "Transaction identifier (of max length 50) entered by 
+		  manufacturer, which is also returned as part of response as is and is
+		  useful for linking transactions full round trip across system"
+	  },
+	  "operationBusinessIdentifier": {
+		"type": "string",
+		"description": "Operator BusinessUnique Identifier to be linked to the 
+		  drone device"
+	  },
+	  "drone": {
+		"type": "object",
+		"properties": {
+		  "deviceId": {
+			"type": "string",
+			"description": "Unique Drone’s Device Id"
+		  },
+		  "droneTypeId": {
+			"type": "integer",
+			"description": "Drone Type Id for the particular drone model in
+			   Digital Sky"
+		  },
+		  "publicKey": {
+			"type": "string",
+			"description": "Public Key of the drone in Base64 encoding"
+		  }
+		},
+		"required": [
+		  "deviceId",
+		  "droneTypeId",
+		  "publicKey"
+		]
+	  }
+	},
+	"required": [
+	  "transactionId",
+	  "operationBusinessIdentifier",
+	  "drone"
+	]
+}
+  

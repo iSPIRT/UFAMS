@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "transactionId": {
+		"type": "string",
+		"description": "Transaction identifier as entered in the request"
+	  },
+	  "responseTimeStamp": {
+		"type": "integer"
+	  },
+	  "code": {
+		"type": "string",
+		"enum": [
+		  "DEREGISTERED",
+		  "DEREGISTRATION_FAILED",
+		  "DRONE_NOT_FOUND",
+		  "DRONE_NOT_REGISTERED",
+		  "INVALID_SIGNATURE",
+		  "INVALID_DIGITAL_CERTIFICATE",
+		  "INVALID_MANUFACTURER",
+		  "MANUFACTURER_BUSINESS_IDENTIFIER_INVALID",
+		  "BAD_REQUEST_PAYLOAD"
+		]
+	  },
+	  "error": {
+		"type": "string",
+		"description": "Error details if registration has failed"
+	  }
+	},
+	"required": [
+	  "transactionId",
+	  "responseTimeStamp",
+	  "code",
+	  "error"
+	]
+}
+  
