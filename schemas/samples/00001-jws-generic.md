@@ -1,7 +1,7 @@
 # JWS Generic Example
 
 Calculating JSON Web Signature (JWS) for a generic payload (MWE)
-A signature must be a valid Flattened JWS JSON serialised string. For instance a payload (serialised as string)
+A signature must be a valid Flattened JWS JSON serialised string. For instance a payload (to be signed) (serialised as string)
 
 ```
 {"a":"b","c":"d","e":1}
