@@ -1,0 +1,26 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+	  "alg": {
+		"const": "RS256",
+	  },
+	  "x5c": {
+		"description": "An array containing Flight Module Provider's DSC Certificate",
+		"type": "array",
+		"minItems": 1,
+		"maxItems": 1,
+		"items": [
+		  {
+			"type": "string",
+			"description": "Base64 encoded value of Flight Module Provider's DSC Certificate"
+		  }
+		]
+	  }
+	},
+	"required": [
+	  "alg",
+	  "x5c"
+	]
+}
+  
