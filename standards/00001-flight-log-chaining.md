@@ -8,7 +8,7 @@ Proposal is to mark every flight log with an auto increment number, counter is i
 
 ## Broken chain
 
-Incident report is generated for each flight log skipped.
+Incident report must be filed with a DSP for each flight log that cannot be submitted to a DSP for any reason.
 
 ## Mandatory Requirements
 
