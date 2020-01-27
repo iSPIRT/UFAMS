@@ -2,6 +2,10 @@
 
 ## API Endpoints
 
+## Schemas
+
+See [schemas](schemas), [examples](schemas/examples/README.md) and descriptions below.
+
 ### Device Registration 
 
 - URL: https://{baseUrl}/api/v1/droneDevice/register/<manufacturerBusinessIdentifier>
