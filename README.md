@@ -4,7 +4,7 @@
 
 ## Schemas
 
-See [schemas](schemas) and descriptions below.
+See [schemas](schemas), [examples](schemas/examples/README.md) and descriptions below.
 
 ### Device Registration 
 
@@ -25,6 +25,8 @@ The registration request to the server should be constructed as per JWS specific
 
 Schemas: schemas/endpoints/v1/device-deregistration
 
-### Schema Samples
+## Proposals Track
+Proposals that are currently under consideration or review will be available in the [proposals](proposals) directory.
 
-See [schema samples](schemas/samples/README.md).
+## Standards Track
+Proposals that have been accepted will be available in the [standards](standards/) directory.
