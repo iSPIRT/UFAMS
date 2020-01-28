@@ -30,3 +30,6 @@ Proposals that are currently under consideration or review will be available in 
 
 ## Standards Track
 Proposals that have been accepted will be available in the [standards](standards/) directory.
+
+### Standards Document
+Earlier this was refered to as RPAS Guidance Manual, or Technology standards document. To build a PDF version of the document, refer to [this readme](./document/README.md).
