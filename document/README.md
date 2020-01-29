@@ -6,7 +6,7 @@ This contains markdown that can be compiled into a PDF version of the DigitalSky
 
 ### Prerequisites
 
-* Install `make` and `pandoc`.
+* Install `make` and `pandoc` and `xelatex`.
 
 #### Install Pandoc
 
