@@ -20,7 +20,7 @@ brew install pandoc
 
 ### Build
 
-1. In case you want to create markdown from a `docx`, save the word doc as `standards.docx` and run `make md`.
+1. In case you want to create markdown from a `docx`, save the word doc as `standards.docx` and run `make content/standards.md`.
 1. Run
 ```bash
 make
