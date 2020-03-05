@@ -2,6 +2,10 @@
 
 ## API Endpoints
 
+## Schemas
+
+See [schemas](schemas), [examples](schemas/examples/README.md) and descriptions below.
+
 ### Device Registration 
 
 - URL: https://{baseUrl}/api/v1/droneDevice/register/<manufacturerBusinessIdentifier>
@@ -21,3 +25,8 @@ The registration request to the server should be constructed as per JWS specific
 
 Schemas: schemas/endpoints/v1/device-deregistration
 
+## Proposals Track
+Proposals that are currently under consideration or review will be available in the [proposals](proposals) directory.
+
+## Standards Track
+Proposals that have been accepted will be available in the [standards](standards/) directory.
