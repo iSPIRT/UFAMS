@@ -14,7 +14,7 @@ See [schemas](schemas), [examples](schemas/examples/README.md) and descriptions 
 
 The registration request to the server should be constructed as per JWS specification (IETF RFC7515). The registration data payload specified above should be encoded in base64 encoding and signed using Flight Module Provider Private Key securely through PKI Token/HSM.
 
-Schemas: schemas/endpoints/v1/device-registration
+Schemas: [schemas](schemas/endpoints/v1/device-registration)
 
 ### Device Deregistration 
 - URL: https://{baseUrl}/api/v1/droneDevice/deregister/<manufacturerBusinessIdentifier>
@@ -23,7 +23,12 @@ Schemas: schemas/endpoints/v1/device-registration
 
 The registration request to the server should be constructed as per JWS specification (IETF RFC7515). The registration data payload specified above should be encoded in base64 encoding and signed using Flight Module Provider Private Key securely through PKI Token/HSM.
 
-Schemas: schemas/endpoints/v1/device-deregistration
+Schemas: [schemas](schemas/endpoints/v1/device-deregistration)
+
+## Flight Log
+The flight log should be constructed as per JWS specification (IETF RFC7515). The TBS flight log payload should be encoded in base64 encoding and signed using Flight Module Private Key.
+
+Refer to [schemas](schemas/flight-log/v1) for flight log schema.
 
 ## Proposals Track
 Proposals that are currently under consideration or review will be available in the [proposals](proposals) directory.

@@ -3,7 +3,7 @@
 	"type": "object",
 	"properties": {
 	  "alg": {
-		"const": "RS256",
+		"const": "RS256"
 	  },
 	  "x5c": {
 		"description": "An array containing Flight Module Provider's DSC Certificate",
