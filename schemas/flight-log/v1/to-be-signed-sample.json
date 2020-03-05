@@ -1,0 +1,35 @@
+{
+	"flightPermitId": "0b68382f-29e4-4261-ac40-e1e4e306a247",
+	"sequenceNo": 25,
+	"previousSequenceNo": 24,
+    "logEntries": [
+        {
+            "entryType": "TAKEOFF/ARM",
+            "timestamp": 1583387467 ,
+            "longitude": 38.25,
+            "latitude": 44.96,
+            "altitude": 704.34
+        },
+        {
+            "entryType": "GEOFENCE_BREACH",
+            "timestamp": 1583388467 ,
+            "longitude": 38.25,
+            "latitude": 44.96,
+            "altitude": 7
+        },
+        {
+            "entryType": "TIME_BREACH",
+            "timestamp": 1583389467 ,
+            "longitude": 38.25,
+            "latitude": 44.96,
+            "altitude": 560
+        },
+        {
+            "entryType": "LAND/DISARM",
+            "timestamp": 1583397467 ,
+            "longitude": 38.25,
+            "latitude": 44.96,
+            "altitude": 560
+        }
+    ]
+}
