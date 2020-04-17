@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"properties": {
+		"transactionId": {
+			"type": "string",
+			"description": "Transaction identifier (of max length 50) entered by manufacturer, which is also returned as part of response as is and is useful for linking transactions full round trip across system"
+		},
+		"uasId": {
+			"type": "string",
+			"description": "Drone UIN"
+		},
+		"uaType": {
+			"type": "string",
+			"description": "The UA Type can help infer performance, speed, and duration of flights, for example, a “fixed wing” can generally fly in a forward direction only (as compared to a multi-rotor). This can also help differentiate aircraft types without sharing operationally sensitive information like the make and model of a particular aircraft. Make and model are anticipated to become available during the Registration ID lookup process. UAS Type is also useful for correlating visual observation with data received. The types were formulated based on unique flight characteristics. The possible values are in Table 2 of ASTM Remote Id Spec"
+		},
+		"timestamp" : {
+			"type": "string",
+			"description": "The time of applicability of position information. This may be the time coming from the source such as a GPS, or the time when the system computes the values using an algorithm such as an Extended Kalman Filter (EKF). Timestamps must be expressed with a minimum resolution of one tenth of a second."
+		}
+	},
+	"required": [
+	  "transactionId",
+	  "uasId",
+	  "uaType",
+	  "timestamp"
+	]
+}
+  
