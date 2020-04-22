@@ -154,13 +154,13 @@ http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-Risk Assessment for Unmanned Aircraft Systems
+Deconfliction for Unmanned Aircraft Systems
 \end_layout
 
 \begin_layout Author
 Sayandeep Purkayasth
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Sayandeep Purkayasth is with the Deepcyan Software, India, e-mail: 
