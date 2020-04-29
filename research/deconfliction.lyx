@@ -319,6 +319,10 @@ This paper describes a deconfliction system from requirements perspective.
  cases and known limitations thereof.
 \end_layout
 
+\begin_layout Abstract
+Simulations: case-study: Network dropout; other case-studies??
+\end_layout
+
 \begin_layout Keywords
 simplicity, beauty, elegance
 \end_layout
@@ -399,6 +403,11 @@ Scope
 
 \begin_layout Standard
 TBD
+\end_layout
+
+\begin_layout Standard
+cf.
+ NASA Deconfliction studies; SITL
 \end_layout
 
 \begin_layout Section

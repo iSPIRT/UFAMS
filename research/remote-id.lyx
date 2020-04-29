@@ -383,11 +383,35 @@ IEEEPARstart
 \end_layout
 
 \begin_layout Subsection
-Scope
+Scope & Goals 
+\end_layout
+
+\begin_layout Enumerate
+pros/cons of ASTM
+\end_layout
+
+\begin_layout Enumerate
+comparison with other RemoteIDs
+\end_layout
+
+\begin_layout Enumerate
+overlaps between NPNT & ASTM
+\end_layout
+
+\begin_layout Enumerate
+Proposed changes to NPNT/DSP ecosystem
 \end_layout
 
 \begin_layout Standard
-TBD
+NPNT
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RPASGM2020"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -396,6 +420,24 @@ ASTM Remote ID Specification
 LatexCommand cite
 key "ASTM:F3411:19"
 literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Benefits of adopting ASTM; changes to the existing DSP/UFII architecture
+ to work with ASTM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+4-6 weeks
+\end_layout
 
 \end_inset
 
