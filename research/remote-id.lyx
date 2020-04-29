@@ -154,7 +154,7 @@ http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-Deconfliction for Unmanned Aircraft Systems
+Remote Identification for Unmanned Aircraft Systems
 \end_layout
 
 \begin_layout Author
@@ -239,20 +239,6 @@ literal "false"
 
 \end_layout
 
-\begin_layout After Title Text
-after title text like dedication
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-optional
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Page headings
 \begin_inset Argument 1
 status open
@@ -314,11 +300,16 @@ only if you have one
 \end_layout
 
 \begin_layout Abstract
-This is the abstract text.
+This paper describes a Remote Identification Scheme for Unmanned Aircraft
+ Systems in the context of ASTM RemoteID Specification and the NPNT Regulation
+ in India.
+ It focuses on the way forward for Indian UAS Manufacturers to enable remote
+ identification of their systems by law enforcement and other third parties.
 \end_layout
 
 \begin_layout Keywords
-simplicity, beauty, elegance
+Unmanned Aviation, Unmanned Aircraft Systems, Identification, Risk Assessment,
+ Law Enforcement
 \end_layout
 
 \begin_layout Peer Review Title
@@ -389,6 +380,26 @@ IEEEPARstart
 
  is the text text text text text text text text text text text text text
  text text text.
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Standard
+TBD
+\end_layout
+
+\begin_layout Standard
+ASTM Remote ID Specification
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASTM:F3411:19"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

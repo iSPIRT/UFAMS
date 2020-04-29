@@ -1,2 +1,5 @@
 research/*.lyx~
+research/#*.lyx#
 research/*.pdf
+
+.DS_Store

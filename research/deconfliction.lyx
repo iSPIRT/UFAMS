@@ -154,13 +154,13 @@ http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-Risk Assessment for Unmanned Aircraft Systems
+Deconfliction for Unmanned Aircraft Systems
 \end_layout
 
 \begin_layout Author
 Sayandeep Purkayasth
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Sayandeep Purkayasth is with the Deepcyan Software, India, e-mail: 
@@ -314,7 +314,9 @@ only if you have one
 \end_layout
 
 \begin_layout Abstract
-This is the abstract text.
+This paper describes a deconfliction system from requirements perspective.
+ It also details typical operation scenarios in single-DSP and multi-DSP
+ cases and known limitations thereof.
 \end_layout
 
 \begin_layout Keywords
@@ -389,6 +391,14 @@ IEEEPARstart
 
  is the text text text text text text text text text text text text text
  text text text.
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Standard
+TBD
 \end_layout
 
 \begin_layout Section
