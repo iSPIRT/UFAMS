@@ -1,4 +1,4 @@
-all: risk-assessment.pdf deconfliction.pdf remote-id.pdf
+all: risk-assessment.pdf deconfliction.pdf remote-id.pdf Bibliography.bib
 
 risk-assessment.pdf: risk-assessment.lyx
 	lyx --export pdf2 risk-assessment.lyx
@@ -8,3 +8,6 @@ deconfliction.pdf: deconfliction.lyx
 
 remote-id.pdf: remote-id.lyx
 	lyx --export pdf2 remote-id.lyx
+
+clean:
+	rm *.pdf

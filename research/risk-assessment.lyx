@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,8 +26,6 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -45,7 +43,7 @@
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
 \pdf_pdfborder true
-\pdf_colorlinks false
+\pdf_colorlinks true
 \pdf_backref false
 \pdf_pdfusetitle false
 \pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
@@ -70,7 +68,6 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -79,10 +76,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -169,7 +163,6 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -196,7 +189,6 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
-literal "false"
 
 \end_inset
 
@@ -227,7 +219,6 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
-literal "false"
 
 \end_inset
 
@@ -411,11 +402,46 @@ Previous Work
 \end_layout
 
 \begin_layout Standard
-text text text text text text text text text text text text text text text
+Joint Authorities on Rulemaking for Unmanned Systems (JARUS) Specific Operations
+ Risk Assessment (SORA) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JARUS-SORA/JAR-DEL-WG6-D.04"
+
+\end_inset
+
+ is a detailed study on the Operational Risks associated with UA operations.
+ It has been endorsed by the European Aviation Safety Agency (EASA).
+ Other risk assessment methodologies include 
+\begin_inset Formula $\ldots$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-subsection
+JARUS SORA
+\end_layout
+
+\begin_layout Standard
+The SORA methodology categorises any UAS operation from ground (Ground Risk
+ Category - GRC) and air risk (Air Risk Category - ARC) perspectives.
+ These also determine a Specific Assurance and Integrity Levels (SAIL) for
+ ground and air, which represent the confidence that the operations will
+ stay under control within the intended operation.
+ Based on the assigned risk categories, mitigations are suggested to reduce
+ SAIL.
+ The ultimate step of risk assessment is recommendation of Operational Safety
+ Objectives (OSO) to be met in accordance to SAIL.
+ The SORA process also details several operational scenarios that are intended
+ as a template for competent authorities and operators.
+ 
+\end_layout
+
+\begin_layout Standard
+Ultimately, however, the SORA process remains a qualitative assessment strategy,
+ and is does not contain prescriptive requirements, and aims only to guide
+ reduction of risk to acceptable levels.
 \end_layout
 
 \begin_layout Subsection
@@ -601,7 +627,6 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
-literal "true"
 
 \end_inset
 
