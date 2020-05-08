@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass IEEEtran
+\textclass report
 \begin_preamble
 % for subfigures/subtables
 \usepackage[caption=false,font=footnotesize]{subfig}
@@ -31,7 +31,7 @@
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command bibtex
+\bibtex_command default
 \index_command default
 \float_placement tbh
 \paperfontsize default
@@ -239,80 +239,6 @@ literal "false"
 
 \end_layout
 
-\begin_layout After Title Text
-after title text like dedication
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-optional
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Page headings
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Journal of XXX
-\end_layout
-
-\end_inset
-
-Your Name 
-\begin_inset Flex Lowercase
-status open
-
-\begin_layout Plain Layout
-
-\emph on
-et al.
-\end_layout
-
-\end_inset
-
-: Your Title
-\end_layout
-
-\begin_layout Publication ID
-0000–0000/00$00.00
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-copyright
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-2012 IEEE
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-only if you have one
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Abstract
 This paper describes a deconfliction system from requirements perspective.
  It also details typical operation scenarios in single-DSP and multi-DSP
@@ -323,38 +249,11 @@ This paper describes a deconfliction system from requirements perspective.
 Simulations: case-study: Network dropout; other case-studies??
 \end_layout
 
-\begin_layout Keywords
-simplicity, beauty, elegance
+\begin_layout Abstract
+Keywords: simplicity, beauty, elegance
 \end_layout
 
-\begin_layout Peer Review Title
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Don't add text here!
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-required if you use the document class option 
-\family sans
-peerreview
-\family default
-, must otherwise not be used
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
+\begin_layout Chapter
 Introduction
 \end_layout
 
@@ -397,7 +296,7 @@ IEEEPARstart
  text text text.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Scope
 \end_layout
 
@@ -410,7 +309,7 @@ cf.
  NASA Deconfliction studies; SITL
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Previous Work
 \end_layout
 
@@ -418,11 +317,15 @@ Previous Work
 text text text text text text text text text text text text text text text
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Chapter
+Main Chapter
+\end_layout
+
+\begin_layout Section
 subsection
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 another subsection
 \end_layout
 
@@ -430,16 +333,7 @@ another subsection
 Methodology
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Theorem name
-\end_layout
-
-\end_inset
-
+\begin_layout Standard
 For a named theorem or theorem-like environment you need to insert the name
  through 
 \family sans
@@ -449,11 +343,11 @@ Short Title
 , as done here.
 \end_layout
 
-\begin_layout Lemma
+\begin_layout Standard
 If you don't want a theorem or lemma name don't add one.
 \end_layout
 
-\begin_layout Proof
+\begin_layout Standard
 And here's the proof!
 \end_layout
 
@@ -583,19 +477,6 @@ Conclusions
 bla bla
 \end_layout
 
-\begin_layout Appendices
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Don't add text here!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 First appendix
 \end_layout
@@ -616,7 +497,7 @@ literal "true"
 Second appendix
 \end_layout
 
-\begin_layout Section*
+\begin_layout Chapter*
 Acknowlegment
 \end_layout
 
@@ -648,81 +529,6 @@ options "IEEEtran"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Biography
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "1in"
-special "none"
-height "1.25in"
-height_special "none"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-Replace this box by an image with a width of 1
-\begin_inset space \thinspace{}
-\end_inset
-
-in and a height of 1.25
-\begin_inset space \thinspace{}
-\end_inset
-
-in!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Your Name
-\end_layout
-
-\end_inset
-
- All about you and the what your interests are.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Biography without photo
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Coauthor
-\end_layout
-
-\end_inset
-
-Same again for the co-author, but without photo
 \end_layout
 
 \end_body
