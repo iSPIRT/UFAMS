@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,8 +26,6 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -70,7 +68,6 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -79,10 +76,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -163,13 +157,12 @@ Sayandeep Purkayasth
 status open
 
 \begin_layout Plain Layout
-Sayandeep Purkayasth is with the Deepcyan Software, India, e-mail: 
+Sayandeep Purkayasth is with Deepcyan Software, India, e-mail: 
 \begin_inset CommandInset href
 LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -178,25 +171,25 @@ literal "false"
 
 \end_inset
 
-, Second
+, Rakesh
 \begin_inset space ~
 \end_inset
 
-Name
+Vohra
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Second
+Rakesh
 \begin_inset space ~
 \end_inset
 
-Name is with the Department of ..., ...
- Institute of ..., City, Country, e-mail: 
+Vohra is with UniFly, Belgium, e-mail: 
 \begin_inset CommandInset href
 LatexCommand href
-target "xxx@xxx.xxx"
-literal "false"
+name "rakesh.vohra@unifly.aero"
+target "rakesh.vohra@unifly.aero"
+type "mailto:"
 
 \end_inset
 
@@ -227,7 +220,6 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
-literal "false"
 
 \end_inset
 
@@ -407,7 +399,6 @@ NPNT
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RPASGM2020"
-literal "false"
 
 \end_inset
 
@@ -419,7 +410,6 @@ ASTM Remote ID Specification
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASTM:F3411:19"
-literal "false"
 
 \end_inset
 
@@ -445,168 +435,51 @@ status open
 \end_layout
 
 \begin_layout Section
-Previous Work
-\end_layout
-
-\begin_layout Standard
-text text text text text text text text text text text text text text text
+Remote ID
 \end_layout
 
 \begin_layout Subsection
-subsection
+Introduction
 \end_layout
 
 \begin_layout Subsection
-another subsection
+ASTM Remote ID spec
+\end_layout
+
+\begin_layout Subsection
+Other Remote ID specs
+\end_layout
+
+\begin_layout Subsection
+Comparison ASTM vs others
+\end_layout
+
+\begin_layout Subsection
+Why ASTM?
 \end_layout
 
 \begin_layout Section
-Methodology
+UFII/DSP/NPNT ecosystem 
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Theorem name
+\begin_layout Subsection
+Overview
 \end_layout
 
-\end_inset
-
-For a named theorem or theorem-like environment you need to insert the name
- through 
-\family sans
-Insert\SpecialChar menuseparator
-Short Title
-\family default
-, as done here.
-\end_layout
-
-\begin_layout Lemma
-If you don't want a theorem or lemma name don't add one.
-\end_layout
-
-\begin_layout Proof
-And here's the proof!
+\begin_layout Subsection
+Integrating ASTM Remote ID
 \end_layout
 
 \begin_layout Section
-Results
+Recommendations
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-placement htbp
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\family sans
-A single column figure goes here
+\begin_layout Subsection
+Regulation changes
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Captions go 
-\emph on
-under
-\emph default
- the figure
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float table
-placement htbp
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Table captions go 
-\emph on
-above
-\emph default
- the table
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-delete
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-this
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-example
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-table
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Standardisation 
 \end_layout
 
 \begin_layout Section
@@ -639,7 +512,6 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
-literal "true"
 
 \end_inset
 
