@@ -676,7 +676,7 @@ phy entries embedded in the \SpecialChar LaTeX
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "IEEEabrv,IEEEexample,Bibliography"
+bibfiles "IEEEabrv,IEEEexample,../Bibliography"
 options "IEEEtran"
 
 \end_inset

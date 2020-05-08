@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -43,7 +45,7 @@
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
 \pdf_pdfborder true
-\pdf_colorlinks true
+\pdf_colorlinks false
 \pdf_backref false
 \pdf_pdfusetitle false
 \pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
@@ -68,6 +70,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -76,7 +79,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -148,13 +154,13 @@ http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
 \end_layout
 
 \begin_layout Title
-Risk Assessment for Unmanned Aircraft Systems
+Remote Identification for Unmanned Aircraft Systems
 \end_layout
 
 \begin_layout Author
 Sayandeep Purkayasth
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Sayandeep Purkayasth is with the Deepcyan Software, India, e-mail: 
@@ -163,6 +169,7 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -189,6 +196,7 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
+literal "false"
 
 \end_inset
 
@@ -219,24 +227,11 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
+literal "false"
 
 \end_inset
 
 .
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout After Title Text
-after title text like dedication
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-optional
 \end_layout
 
 \end_inset
@@ -305,18 +300,16 @@ only if you have one
 \end_layout
 
 \begin_layout Abstract
-This paper describes a risk assessment study of Unmanned Aircraft Systems
- that aims to understand the risks, underlying causes, consequences and
- mitigations associated with their operation.
- 
-\end_layout
-
-\begin_layout Abstract
-Risk Categorisation; Simulations (maybe in a subsequent study); 
+This paper describes a Remote Identification Scheme for Unmanned Aircraft
+ Systems in the context of ASTM RemoteID Specification and the NPNT Regulation
+ in India.
+ It focuses on the way forward for Indian UAS Manufacturers to enable remote
+ identification of their systems by law enforcement and other third parties.
 \end_layout
 
 \begin_layout Keywords
-simplicity, beauty, elegance
+Unmanned Aviation, Unmanned Aircraft Systems, Identification, Risk Assessment,
+ Law Enforcement
 \end_layout
 
 \begin_layout Peer Review Title
@@ -390,11 +383,65 @@ IEEEPARstart
 \end_layout
 
 \begin_layout Subsection
-Scope
+Scope & Goals 
+\end_layout
+
+\begin_layout Enumerate
+pros/cons of ASTM
+\end_layout
+
+\begin_layout Enumerate
+comparison with other RemoteIDs
+\end_layout
+
+\begin_layout Enumerate
+overlaps between NPNT & ASTM
+\end_layout
+
+\begin_layout Enumerate
+Proposed changes to NPNT/DSP ecosystem
 \end_layout
 
 \begin_layout Standard
-TBD
+NPNT
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RPASGM2020"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ASTM Remote ID Specification
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASTM:F3411:19"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Benefits of adopting ASTM; changes to the existing DSP/UFII architecture
+ to work with ASTM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+4-6 weeks
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -402,46 +449,11 @@ Previous Work
 \end_layout
 
 \begin_layout Standard
-Joint Authorities on Rulemaking for Unmanned Systems (JARUS) Specific Operations
- Risk Assessment (SORA) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "JARUS-SORA/JAR-DEL-WG6-D.04"
-
-\end_inset
-
- is a detailed study on the Operational Risks associated with UA operations.
- It has been endorsed by the European Aviation Safety Agency (EASA).
- Other risk assessment methodologies include 
-\begin_inset Formula $\ldots$
-\end_inset
-
-
+text text text text text text text text text text text text text text text
 \end_layout
 
 \begin_layout Subsection
-JARUS SORA
-\end_layout
-
-\begin_layout Standard
-The SORA methodology categorises any UAS operation from ground (Ground Risk
- Category - GRC) and air risk (Air Risk Category - ARC) perspectives.
- These also determine a Specific Assurance and Integrity Levels (SAIL) for
- ground and air, which represent the confidence that the operations will
- stay under control within the intended operation.
- Based on the assigned risk categories, mitigations are suggested to reduce
- SAIL.
- The ultimate step of risk assessment is recommendation of Operational Safety
- Objectives (OSO) to be met in accordance to SAIL.
- The SORA process also details several operational scenarios that are intended
- as a template for competent authorities and operators.
- 
-\end_layout
-
-\begin_layout Standard
-Ultimately, however, the SORA process remains a qualitative assessment strategy,
- and is does not contain prescriptive requirements, and aims only to guide
- reduction of risk to acceptable levels.
+subsection
 \end_layout
 
 \begin_layout Subsection
@@ -627,6 +639,7 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
+literal "true"
 
 \end_inset
 
@@ -663,7 +676,7 @@ phy entries embedded in the \SpecialChar LaTeX
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "IEEEabrv,IEEEexample,Bibliography"
+bibfiles "IEEEabrv,IEEEexample,../Bibliography"
 options "IEEEtran"
 
 \end_inset

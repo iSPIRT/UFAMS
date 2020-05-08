@@ -1,13 +1,26 @@
-all: risk-assessment.pdf deconfliction.pdf remote-id.pdf Bibliography.bib
+all: papers tech-reports
 
-risk-assessment.pdf: risk-assessment.lyx
-	lyx --export pdf2 risk-assessment.lyx
+papers: papers/risk-assessment.pdf papers/deconfliction.pdf papers/remote-id.pdf Bibliography.bib
 
-deconfliction.pdf: deconfliction.lyx
-	lyx --export pdf2 deconfliction.lyx
+tech-reports: tech-reports/risk-assessment.pdf tech-reports/deconfliction.pdf tech-reports/remote-id.pdf Bibliography.bib
 
-remote-id.pdf: remote-id.lyx
-	lyx --export pdf2 remote-id.lyx
+papers/risk-assessment.pdf: papers/risk-assessment.lyx
+	lyx --export pdf2 papers/risk-assessment.lyx
+
+papers/deconfliction.pdf: papers/deconfliction.lyx
+	lyx --export pdf2 papers/deconfliction.lyx
+
+papers/remote-id.pdf: papers/remote-id.lyx
+	lyx --export pdf2 papers/remote-id.lyx
+
+tech-reports/risk-assessment.pdf: tech-reports/risk-assessment.lyx
+	lyx --export pdf2 tech-reports/risk-assessment.lyx
+
+tech-reports/deconfliction.pdf: tech-reports/deconfliction.lyx
+	lyx --export pdf2 tech-reports/deconfliction.lyx
+
+tech-reports/remote-id.pdf: tech-reports/remote-id.lyx
+	lyx --export pdf2 tech-reports/remote-id.lyx
 
 clean:
-	rm *.pdf
+	rm papers/*.pdf tech-reports/*.pdf
