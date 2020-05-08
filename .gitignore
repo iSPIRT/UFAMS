@@ -1,5 +1,8 @@
-research/*.lyx~
-research/#*.lyx#
-research/*.pdf
+research/papers/*.lyx~
+research/tech-reports/*.lyx~
+research/papers/#*.lyx#
+research/tech-reports/#*.lyx#
+research/papers/*.pdf
+research/tech-reports/*.pdf
 
 .DS_Store
