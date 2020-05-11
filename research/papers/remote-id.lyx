@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -68,6 +70,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -76,7 +79,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -163,6 +169,7 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -190,6 +197,7 @@ LatexCommand href
 name "rakesh.vohra@unifly.aero"
 target "rakesh.vohra@unifly.aero"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -220,6 +228,7 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
+literal "false"
 
 \end_inset
 
@@ -399,6 +408,7 @@ NPNT
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RPASGM2020"
+literal "true"
 
 \end_inset
 
@@ -410,6 +420,7 @@ ASTM Remote ID Specification
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASTM:F3411:19"
+literal "true"
 
 \end_inset
 
@@ -462,8 +473,66 @@ Why ASTM?
 UFII/DSP/NPNT ecosystem 
 \end_layout
 
+\begin_layout Standard
+The mission of Digital Sky is to create a completely digital, paperless,
+ and presenceless process, thus fast-forwarding to a future of on-demand
+ seamless permissions for RPAS, operators, and pilots.
+\end_layout
+
 \begin_layout Subsection
 Overview
+\end_layout
+
+\begin_layout Subsection
+UFII
+\end_layout
+
+\begin_layout Standard
+The Unified Flight Information Interface is an effort to integrate the airspaces
+ of manned and unmanned aircraft systems at the governmental level under
+ the auspices of the Airports Authority of India (AAI).
+ This interface would coordinate data exchange between various security
+ agencies, the DGCA, the Aeronautical Telecommunication Network, the Aeronautica
+l Fixed Telecommunication Network, the Air Defense Units, etc.
+ The purpose of this integration is to enable air traffic management in
+ a concerted fashion.
+\end_layout
+
+\begin_layout Standard
+The UFII will enable private innovators to provide services for unmanned
+ air traffic management.
+ Such innovators are termed as DigitalSky Service Providers (DSP).
+ DSPs would in their regions of operation coordinate with RPAS manufacturers,
+ operators and the RPAS’s wherever possible to maintain conformance with
+ Civil Aviation Requirements and RPAS Guidance Manual.
+ The UFII would also define the data exchange formats for communication
+ between itself and DSPs and between DSPs for various scenarios to ensure
+ interoperability.
+\end_layout
+
+\begin_layout Subsection
+DigitalSky Service Providers
+\end_layout
+
+\begin_layout Standard
+While the final decisions for most critical processes such as Flight Plan
+ approval, etc.
+ would rest with the UFII, DSPs would provide a valuable intermediate layer
+ by enabling informed flight planning and operations by assessing risks
+ associated with flight plans, providing terrain, mapping & weather data,
+ providing realtime information about constraints, directives, notifications,
+ non-conformance, active operations, and so forth.
+ They may also provide ancillary services enabling registration for RPAS
+ Manufacturers, Pilots, Operators and RPAS units.
+\end_layout
+
+\begin_layout Subsection
+DigitalSky
+\end_layout
+
+\begin_layout Standard
+The DigitalSky portal is the DigitalSky Service Provider portal that would
+ be operated by the AAI as a standard bearer for DSPs.
 \end_layout
 
 \begin_layout Subsection
@@ -512,6 +581,7 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
+literal "true"
 
 \end_inset
 
