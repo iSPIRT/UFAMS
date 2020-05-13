@@ -1,4 +1,4 @@
-all: papers tech-reports VERSION.pdf ../.git/ORIG_HEAD
+all: papers tech-reports VERSION.pdf
 
 VERSION.pdf:
 	git -c color.ui=always log --stat -n1 | aha | DISPLAY=:0 wkhtmltopdf - VERSION.pdf
