@@ -444,6 +444,69 @@ Ultimately, however, the SORA process remains a qualitative assessment strategy,
  reduction of risk to acceptable levels.
 \end_layout
 
+\begin_layout Subsubsection
+Standard Scenario 01 (STS-01)
+\end_layout
+
+\begin_layout Standard
+This operational scenario covers a UAS operation performed in the Specific
+ category (Category B) as follows.
+\end_layout
+
+\begin_layout Itemize
+UA max characteristic dimension of 3m and typical kinetic energy up to 34
+ kJ.
+\end_layout
+
+\begin_layout Itemize
+BVLOS w/ or w/o Visual Observer (VO)
+\end_layout
+
+\begin_layout Itemize
+Overflown area: Sparsely populated
+\end_layout
+
+\begin_layout Itemize
+Flight height limit: 150m or 500ft (above ground)
+\end_layout
+
+\begin_layout Itemize
+Airspace: uncontrolled (F or G)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JARUS-SORA/JAR-DEL-WG6-D.04"
+
+\end_inset
+
+ categorises such an operation as follows
+\end_layout
+
+\begin_layout Enumerate
+Final Ground Risk Class (GRC): 
+\series bold
+3
+\end_layout
+
+\begin_layout Enumerate
+Final Air Risk Class (ARC): 
+\series bold
+ARC-b
+\end_layout
+
+\begin_layout Enumerate
+SAIL: 
+\series bold
+II
+\end_layout
+
+\begin_layout Standard
+and proceeds to detail the operational mitigations, operator provisions,
+ and technical provisions for such an operation.
+\end_layout
+
 \begin_layout Subsection
 another subsection
 \end_layout

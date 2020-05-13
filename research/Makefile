@@ -1,4 +1,7 @@
-all: papers tech-reports
+all: papers tech-reports VERSION.pdf ../.git/ORIG_HEAD
+
+VERSION.pdf:
+	git -c color.ui=always log --stat -n1 | aha | DISPLAY=:0 wkhtmltopdf - VERSION.pdf
 
 papers: papers/risk-assessment.pdf papers/deconfliction.pdf papers/remote-id.pdf
 
@@ -23,4 +26,4 @@ tech-reports/remote-id.pdf: tech-reports/remote-id.lyx Bibliography.bib
 	lyx --export pdf2 tech-reports/remote-id.lyx
 
 clean:
-	rm papers/*.pdf tech-reports/*.pdf
+	rm -f *.pdf papers/*.pdf tech-reports/*.pdf
