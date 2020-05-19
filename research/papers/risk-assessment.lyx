@@ -445,12 +445,19 @@ Ultimately, however, the SORA process remains a qualitative assessment strategy,
 \end_layout
 
 \begin_layout Subsubsection
-Standard Scenario 01 (STS-01)
+Standard Scenario 01 (JARUS-STS-01)
 \end_layout
 
 \begin_layout Standard
-This operational scenario covers a UAS operation performed in the Specific
- category (Category B) as follows.
+This operational scenario detailed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JARUS-SORA/STS-01"
+
+\end_inset
+
+ covers a UAS operation performed in the Specific category (Category B)
+ as follows.
 \end_layout
 
 \begin_layout Itemize
@@ -507,8 +514,74 @@ and proceeds to detail the operational mitigations, operator provisions,
  and technical provisions for such an operation.
 \end_layout
 
-\begin_layout Subsection
-another subsection
+\begin_layout Subsubsection
+Standard Scenario 02 (JARUS-STS-02)
+\end_layout
+
+\begin_layout Standard
+This operational scenario detailed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JARUS-SORA/STS-02"
+
+\end_inset
+
+ covers a UAS operation performed in the Specific category (Category B)
+ as follows.
+\end_layout
+
+\begin_layout Itemize
+UA max characteristic dimension of 3m and typical kinetic energy up to 34
+ kJ.
+\end_layout
+
+\begin_layout Itemize
+VLOS
+\end_layout
+
+\begin_layout Itemize
+Overflown area: Sparsely populated
+\end_layout
+
+\begin_layout Itemize
+Flight height limit: reserved airspace for operation
+\end_layout
+
+\begin_layout Itemize
+Airspace: reserved airspace for operation
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JARUS-SORA/JAR-DEL-WG6-D.04"
+
+\end_inset
+
+ categorises such an operation as follows
+\end_layout
+
+\begin_layout Enumerate
+Final Ground Risk Class (GRC): 
+\series bold
+3
+\end_layout
+
+\begin_layout Enumerate
+Final Air Risk Class (ARC): 
+\series bold
+ARC-a
+\end_layout
+
+\begin_layout Enumerate
+SAIL: 
+\series bold
+II
+\end_layout
+
+\begin_layout Standard
+and proceeds to detail the operational mitigations, operator provisions,
+ and technical provisions for such an operation.
 \end_layout
 
 \begin_layout Section

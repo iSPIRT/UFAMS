@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,8 +26,6 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -70,7 +68,6 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -79,10 +76,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -162,13 +156,12 @@ DigitalSky Service Provider Working Group
 \end_layout
 
 \begin_layout Abstract
-This paper describes a Remote Identification Scheme for Unmanned Aircraft
+This report describes a Remote Identification Scheme for Unmanned Aircraft
  Systems in the context of 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ASTM"
 description "American Society for Testing and Materials"
-literal "false"
 
 \end_inset
 
@@ -302,7 +295,6 @@ LatexCommand href
 name "abhiroop@algopixel.tech"
 target "abhiroop@algopixel.tech"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -340,7 +332,6 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -378,7 +369,6 @@ LatexCommand href
 name "rakesh.vohra@unifly.aero"
 target "rakesh.vohra@unifly.aero"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -877,7 +867,6 @@ NPNT
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RPASGM2020"
-literal "false"
 
 \end_inset
 
@@ -889,7 +878,6 @@ ASTM Remote ID Specification
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASTM:F3411:19"
-literal "false"
 
 \end_inset
 
@@ -914,22 +902,249 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+-- todo -- 
+\end_layout
+
+\begin_layout Plain Layout
+What is Remote Id 
+\end_layout
+
+\begin_layout Plain Layout
+What is Broadcast-based Remote Id and Network-based Remote Id 
+\end_layout
+
+\begin_layout Plain Layout
+Role of USS/DSP 
+\end_layout
+
+\begin_layout Plain Layout
+Additional hardware requirements 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Previous Work
+Remote Id Standards Across The Globe 
 \end_layout
 
 \begin_layout Standard
-text text text text text text text text text text text text text text text
+Globally, there are two standards proposed till date on remote identification
+ of unmanned aircrafts.
+ The first is a Notice for Proposed Rulemaking (NPRM) released by Federal
+ Aviation Authority (FAA) of the USA.
+ The second one is published by ASTM International, an international standards
+ organization.
+ We'll provide a brief description of both the proposals, comparing the
+ similarities and differences.
 \end_layout
 
 \begin_layout Subsection
-subsection
+FAA NPRM on Remote Identification of Unmanned Aircraft Systems 
+\end_layout
+
+\begin_layout Standard
+The NPRM was released by FAA on 12 December 2019.
+ The NPRM is meant to be a precursor of regulations which would govern operation
+ of unmanned aircrafts in the US airspace.
+ Its focus is on adding a capability for the law enforcement agencies to
+ detect and monitor unmanned aircrafts.
+ As such, the primary aim of the regulation is to alleviate the security
+ and safety concerns of the law enforcement agencies.
+ Salient features of this proposal are as follows:
+\end_layout
+
+\begin_layout Itemize
+Applicable only for drones weighing more than 250g.
+\end_layout
+
+\begin_layout Itemize
+Provides for both Broadcast-based Remote Id and Network-based Remote Id.
+\end_layout
+
+\begin_layout Itemize
+Message elements:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aircraft identifier such as serial number, registration number etc.
+\end_layout
+
+\begin_layout Itemize
+Latitude, longitude and barometric pressure altitude of unmanned aircraft
+\end_layout
+
+\begin_layout Itemize
+Latitude, longitude and barometric pressure altitude of control station
+\end_layout
+
+\begin_layout Itemize
+A coordinated timestamp
+\end_layout
+
+\begin_layout Itemize
+Indication of emergency status of the aircraft
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Complete Remote Id message will be unencrypted and publicly available
+\end_layout
+
+\begin_layout Itemize
+Network Remote Id messages need to be sent to a Remote Id USS Provider.
+ The message can be sent either by the aircraft or the control station.
+\end_layout
+
+\begin_layout Itemize
+The proposal defines 3 types of capabilities
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Standard: Aircrafts under standard category will have the ability to transmit
+ the Remote Id messages through Network-based Remote Id in case internet
+ connectivity is available.
+ When internet connectivity is not available, the aircraft should switch
+ to Broadcast-based Remote Id.
+ Aircrafts with Standard Capability can fly VLoS as well as BVLoS operations.
+\end_layout
+
+\begin_layout Itemize
+Limited: No requirement to support Broadcast-base Remote Id but the aircraft
+ should remain within 400ft of the operator and transmit Remote Id messages
+ through Network-based Remote Id.
+ In case internet connectivity is not available, the aircraft should not
+ take-off.
+\end_layout
+
+\begin_layout Itemize
+No Remote Id: An aircraft without both Standard and Limited Remote Id capabiliti
+es will only be allowed in pre-designated FAA recognized identification
+ areas.
+ Only VLoS operations will be allowed in these areas.
+\end_layout
+
+\begin_layout Itemize
+Manufacturers of Standard and Limited Capability Unmanned Aircrafts will
+ be required to submit a declaration of compliance along with supporting
+ documents for acceptance by FAA.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Usage of ADS-B out is strictly prohibited
 \end_layout
 
 \begin_layout Subsection
-another subsection
+ASTM Standard Specification for Remote Id and Tracking (F3411-19) 
 \end_layout
 
+\begin_layout Standard
+This standard was released for public in February 2020.
+ Unlike the NPRM, which is a regulatory framework, this document is meant
+ to be a technical standard and it leaves regulatory aspects for the ANSPs
+ to figure out.
+ Salient features of this proposal are:
+\end_layout
+
+\begin_layout Itemize
+Allows for using both Broadcast-based Remote Id and Network-based Remote
+ ID
+\end_layout
+
+\begin_layout Itemize
+Broadcast-based Remote Id should transmit data using Bluetooth or Wi-fi
+ advertisements
+\end_layout
+
+\begin_layout Itemize
+Allows signing and encryption of Remote Id messages
+\end_layout
+
+\begin_layout Itemize
+Operation of aircrafts with no Remote Id is allowed if the operator reports
+ the area and time of operation before-hand
+\end_layout
+
+\begin_layout Itemize
+Network Remote Id Service Providers are entities which will be responsible
+ for maintaining records of operations within their specific geographical
+ areas
+\end_layout
+
+\begin_layout Itemize
+Discovery and Synchronization Service(DSS) entities will be responsible
+ for maintaining airspace representation with respect to Net-RID Service
+ Providers
+\end_layout
+
+\begin_layout Itemize
+Network Remote Id Display Providers will provide end users with interfaces
+ to monitor and carry out operations by interacting with the Net-RID Service
+ Providers for the relevant geographical areas
+\end_layout
+
+\begin_layout Itemize
+Mandatory Message elements:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+UAS ID: This can be Serial Number, Registration Id or any other system-generated
+ unique identifier
+\end_layout
+
+\begin_layout Itemize
+UA Type: Fixed-wing, Rotary etc.
+\end_layout
+
+\begin_layout Itemize
+Timestamp and Timestamp Accuracy
+\end_layout
+
+\begin_layout Itemize
+Latitude and Longitude of the aircraft
+\end_layout
+
+\begin_layout Itemize
+Geodetic Altitude of the aircraft
+\end_layout
+
+\begin_layout Itemize
+Geodetic Vertical Accuracy
+\end_layout
+
+\begin_layout Itemize
+Horizontal Accuracy
+\end_layout
+
+\begin_layout Itemize
+Speed Accuracy
+\end_layout
+
+\begin_layout Itemize
+Track Direction
+\end_layout
+
+\begin_layout Itemize
+Speed
+\end_layout
+
+\begin_layout Itemize
+Vertical Speed
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Methodology
 \end_layout
@@ -1087,7 +1302,6 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
-literal "true"
 
 \end_inset
 

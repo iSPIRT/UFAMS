@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,8 +26,6 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -45,7 +43,7 @@
 \pdf_bookmarksopenlevel 1
 \pdf_breaklinks false
 \pdf_pdfborder true
-\pdf_colorlinks false
+\pdf_colorlinks true
 \pdf_backref false
 \pdf_pdfusetitle false
 \pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
@@ -70,7 +68,6 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -79,10 +76,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style english
-\dynamic_quotes 0
+\quotes_language english
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -169,7 +163,6 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -197,7 +190,6 @@ LatexCommand href
 name "rakesh.vohra@unifly.aero"
 target "rakesh.vohra@unifly.aero"
 type "mailto:"
-literal "false"
 
 \end_inset
 
@@ -228,7 +220,6 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
-literal "false"
 
 \end_inset
 
@@ -408,7 +399,6 @@ NPNT
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RPASGM2020"
-literal "true"
 
 \end_inset
 
@@ -420,7 +410,6 @@ ASTM Remote ID Specification
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASTM:F3411:19"
-literal "true"
 
 \end_inset
 
@@ -535,8 +524,108 @@ The DigitalSky portal is the DigitalSky Service Provider portal that would
  be operated by the AAI as a standard bearer for DSPs.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Integrating ASTM Remote ID
+\end_layout
+
+\begin_layout Standard
+Concerns
+\end_layout
+
+\begin_layout Subsection
+ID
+\end_layout
+
+\begin_layout Enumerate
+UIN can be used as UAS ID in Remote Id message.
+ Technically, there is no need for UIN to change during the lifetime of
+ a drone.
+\end_layout
+
+\begin_layout Enumerate
+Possibility of provision for Remote Id for Non-NPNT compliant drones with
+ DAN 
+\end_layout
+
+\begin_layout Subsection
+Privacy
+\end_layout
+
+\begin_layout Subsubsection
+Civilian
+\end_layout
+
+\begin_layout Standard
+TBD: Need to discuss on visibility of individual fields in Remote Id to
+ stakeholders: DSP, UFII, Defence, etc.
+\end_layout
+
+\begin_layout Subsubsection
+Defence and Law Enforcement
+\end_layout
+
+\begin_layout Standard
+There should be a provision for security agencies to switch off Remote Id
+ Broadcast
+\end_layout
+
+\begin_layout Subsection
+Network ID
+\end_layout
+
+\begin_layout Standard
+TBD: Need to finalize information flow from Drone/GCS -> DSP -> UFII
+\end_layout
+
+\begin_layout Subsection
+Broadcast ID
+\end_layout
+
+\begin_layout Standard
+The broadcast protocol can be adopted as is from the ASTM standard 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Single vs.
+ Multi DSP scenarios: Any ramifications
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hardware
+\end_layout
+
+\begin_layout Subsubsection
+Bluetooth
+\end_layout
+
+\begin_layout Subsubsection
+WiFi
+\end_layout
+
+\begin_layout Subsubsection
+4G/LTE
+\end_layout
+
+\begin_layout Subsubsection
+Security aspects
+\end_layout
+
+\begin_layout Paragraph
+Programmability
+\end_layout
+
+\begin_layout Standard
+Who should be able to program the remote ID into hardware: Manufacturer?
+ Is it One-Time-Programmable?
 \end_layout
 
 \begin_layout Section
@@ -549,6 +638,10 @@ Regulation changes
 
 \begin_layout Subsection
 Standardisation 
+\end_layout
+
+\begin_layout Subsection
+Policy making
 \end_layout
 
 \begin_layout Section
@@ -581,7 +674,6 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
-literal "true"
 
 \end_inset
 

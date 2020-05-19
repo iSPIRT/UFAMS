@@ -4,5 +4,6 @@ research/papers/#*.lyx#
 research/tech-reports/#*.lyx#
 research/papers/*.pdf
 research/tech-reports/*.pdf
+research/VERSION.pdf
 
 .DS_Store
