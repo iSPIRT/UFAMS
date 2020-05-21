@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -68,6 +70,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -76,7 +79,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -163,6 +169,7 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -190,6 +197,7 @@ LatexCommand href
 name "rakesh.vohra@unifly.aero"
 target "rakesh.vohra@unifly.aero"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -220,6 +228,7 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
+literal "false"
 
 \end_inset
 
@@ -399,6 +408,7 @@ NPNT
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RPASGM2020"
+literal "true"
 
 \end_inset
 
@@ -410,6 +420,7 @@ ASTM Remote ID Specification
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASTM:F3411:19"
+literal "true"
 
 \end_inset
 
@@ -542,6 +553,26 @@ UIN can be used as UAS ID in Remote Id message.
  a drone.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+How should “lifetime” be defined
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+flight controller board or PKI/X.509 basis
+\end_layout
+
+\begin_layout Enumerate
+multiple PKI/X.509 per UAS
+\end_layout
+
+\begin_layout Enumerate
+how should component changes by manufacturer or owner be treated 
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Enumerate
 Possibility of provision for Remote Id for Non-NPNT compliant drones with
  DAN 
@@ -623,9 +654,26 @@ Security aspects
 Programmability
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Who should be able to program the remote ID into hardware: Manufacturer?
  Is it One-Time-Programmable?
+\end_layout
+
+\begin_layout Enumerate
+What if it is an add-on hw module?
+\end_layout
+
+\begin_layout Enumerate
+What if it is part of UAS Model?
+\end_layout
+
+\begin_layout Enumerate
+Perhaps manufacturer should have an auditable process 
+\end_layout
+
+\begin_layout Enumerate
+Is it possible to have a cryptographically secure process for this similar
+ to NPNT?
 \end_layout
 
 \begin_layout Section
@@ -674,6 +722,7 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
+literal "true"
 
 \end_inset
 
