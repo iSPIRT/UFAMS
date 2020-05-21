@@ -1,0 +1,1350 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass report
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options journal
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for articles to be submitted to journals of the
+ Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE conference articles, see the template file 
+\emph on
+IEEEtran-Conference.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Remote Identification for Unmanned Aircraft Systems
+\end_layout
+
+\begin_layout Author
+DigitalSky Service Provider Working Group
+\end_layout
+
+\begin_layout Abstract
+This report describes a Remote Identification Scheme for Unmanned Aircraft
+ Systems in the context of 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ASTM"
+description "American Society for Testing and Materials"
+
+\end_inset
+
+ RemoteID Specification and the NPNT Regulation in India.
+ It focuses on the way forward for Indian UAS Manufacturers to enable remote
+ identification of their systems by law enforcement and other third parties.
+\end_layout
+
+\begin_layout Abstract
+Keywords: Unmanned Aviation, Unmanned Aircraft Systems, Identification,
+ Risk Assessment, Law Enforcement
+\end_layout
+
+\begin_layout Abstract
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Working Group
+\end_layout
+
+\begin_layout Standard
+Links
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+https://groups.google.com/forum/#!forum/drone-dsp
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+drone-dsp@googlegroups.com
+\family default
+ (members only
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Visit 
+\family typewriter
+https://groups.google.com/forum/#!contactowner/drone-dsp
+\family default
+ for membership.
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Email
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Organisation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abhiroop Bhatnagar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "abhiroop@algopixel.tech"
+target "abhiroop@algopixel.tech"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Algopixel, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sayandeep Purkayasth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "sayandeep@deepcyan.ai"
+target "sayandeep@deepcyan.ai"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Deepcyan Software, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rakesh Vohra
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "rakesh.vohra@unifly.aero"
+target "rakesh.vohra@unifly.aero"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UniFly, Belgium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Contributing Authors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Email
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Organisation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Group Membership (non-contributing)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Standard
+Here is the text text text text text text text text text text text text
+ text text text text.
+\end_layout
+
+\begin_layout Section
+Scope & Goals 
+\end_layout
+
+\begin_layout Enumerate
+pros/cons of ASTM
+\end_layout
+
+\begin_layout Enumerate
+comparison with other RemoteIDs
+\end_layout
+
+\begin_layout Enumerate
+overlaps between NPNT & ASTM
+\end_layout
+
+\begin_layout Enumerate
+Proposed changes to NPNT/DSP ecosystem
+\end_layout
+
+\begin_layout Standard
+NPNT
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RPASGM2020"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ASTM Remote ID Specification
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ASTM:F3411:19"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Benefits of adopting ASTM; changes to the existing DSP/UFII architecture
+ to work with ASTM.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+4-6 weeks
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+-- todo -- 
+\end_layout
+
+\begin_layout Plain Layout
+What is Remote Id 
+\end_layout
+
+\begin_layout Plain Layout
+What is Broadcast-based Remote Id and Network-based Remote Id 
+\end_layout
+
+\begin_layout Plain Layout
+Role of USS/DSP 
+\end_layout
+
+\begin_layout Plain Layout
+Additional hardware requirements 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Remote Id Standards Across The Globe 
+\end_layout
+
+\begin_layout Standard
+Globally, there are two standards proposed till date on remote identification
+ of unmanned aircrafts.
+ The first is a Notice for Proposed Rulemaking (NPRM) released by Federal
+ Aviation Authority (FAA) of the USA.
+ The second one is published by ASTM International, an international standards
+ organization.
+ We'll provide a brief description of both the proposals, comparing the
+ similarities and differences.
+\end_layout
+
+\begin_layout Subsection
+FAA NPRM on Remote Identification of Unmanned Aircraft Systems 
+\end_layout
+
+\begin_layout Standard
+The NPRM was released by FAA on 12 December 2019.
+ The NPRM is meant to be a precursor of regulations which would govern operation
+ of unmanned aircrafts in the US airspace.
+ Its focus is on adding a capability for the law enforcement agencies to
+ detect and monitor unmanned aircrafts.
+ As such, the primary aim of the regulation is to alleviate the security
+ and safety concerns of the law enforcement agencies.
+ Salient features of this proposal are as follows:
+\end_layout
+
+\begin_layout Itemize
+Applicable only for drones weighing more than 250g.
+\end_layout
+
+\begin_layout Itemize
+Provides for both Broadcast-based Remote Id and Network-based Remote Id.
+\end_layout
+
+\begin_layout Itemize
+Message elements:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aircraft identifier such as serial number, registration number etc.
+\end_layout
+
+\begin_layout Itemize
+Latitude, longitude and barometric pressure altitude of unmanned aircraft
+\end_layout
+
+\begin_layout Itemize
+Latitude, longitude and barometric pressure altitude of control station
+\end_layout
+
+\begin_layout Itemize
+A coordinated timestamp
+\end_layout
+
+\begin_layout Itemize
+Indication of emergency status of the aircraft
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Complete Remote Id message will be unencrypted and publicly available
+\end_layout
+
+\begin_layout Itemize
+Network Remote Id messages need to be sent to a Remote Id USS Provider.
+ The message can be sent either by the aircraft or the control station.
+\end_layout
+
+\begin_layout Itemize
+The proposal defines 3 types of capabilities
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Standard: Aircrafts under standard category will have the ability to transmit
+ the Remote Id messages through Network-based Remote Id in case internet
+ connectivity is available.
+ When internet connectivity is not available, the aircraft should switch
+ to Broadcast-based Remote Id.
+ Aircrafts with Standard Capability can fly VLoS as well as BVLoS operations.
+\end_layout
+
+\begin_layout Itemize
+Limited: No requirement to support Broadcast-base Remote Id but the aircraft
+ should remain within 400ft of the operator and transmit Remote Id messages
+ through Network-based Remote Id.
+ In case internet connectivity is not available, the aircraft should not
+ take-off.
+\end_layout
+
+\begin_layout Itemize
+No Remote Id: An aircraft without both Standard and Limited Remote Id capabiliti
+es will only be allowed in pre-designated FAA recognized identification
+ areas.
+ Only VLoS operations will be allowed in these areas.
+\end_layout
+
+\begin_layout Itemize
+Manufacturers of Standard and Limited Capability Unmanned Aircrafts will
+ be required to submit a declaration of compliance along with supporting
+ documents for acceptance by FAA.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Usage of ADS-B out is strictly prohibited
+\end_layout
+
+\begin_layout Subsection
+ASTM Standard Specification for Remote Id and Tracking (F3411-19) 
+\end_layout
+
+\begin_layout Standard
+This standard was released for public in February 2020.
+ Unlike the NPRM, which is a regulatory framework, this document is meant
+ to be a technical standard and it leaves regulatory aspects for the ANSPs
+ to figure out.
+ Salient features of this proposal are:
+\end_layout
+
+\begin_layout Itemize
+Allows for using both Broadcast-based Remote Id and Network-based Remote
+ ID
+\end_layout
+
+\begin_layout Itemize
+Broadcast-based Remote Id should transmit data using Bluetooth or Wi-fi
+ advertisements
+\end_layout
+
+\begin_layout Itemize
+Allows signing and encryption of Remote Id messages
+\end_layout
+
+\begin_layout Itemize
+Operation of aircrafts with no Remote Id is allowed if the operator reports
+ the area and time of operation before-hand
+\end_layout
+
+\begin_layout Itemize
+Network Remote Id Service Providers are entities which will be responsible
+ for maintaining records of operations within their specific geographical
+ areas
+\end_layout
+
+\begin_layout Itemize
+Discovery and Synchronization Service(DSS) entities will be responsible
+ for maintaining airspace representation with respect to Net-RID Service
+ Providers
+\end_layout
+
+\begin_layout Itemize
+Network Remote Id Display Providers will provide end users with interfaces
+ to monitor and carry out operations by interacting with the Net-RID Service
+ Providers for the relevant geographical areas
+\end_layout
+
+\begin_layout Itemize
+Mandatory Message elements:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+UAS ID: This can be Serial Number, Registration Id or any other system-generated
+ unique identifier
+\end_layout
+
+\begin_layout Itemize
+UA Type: Fixed-wing, Rotary etc.
+\end_layout
+
+\begin_layout Itemize
+Timestamp and Timestamp Accuracy
+\end_layout
+
+\begin_layout Itemize
+Latitude and Longitude of the aircraft
+\end_layout
+
+\begin_layout Itemize
+Geodetic Altitude of the aircraft
+\end_layout
+
+\begin_layout Itemize
+Geodetic Vertical Accuracy
+\end_layout
+
+\begin_layout Itemize
+Horizontal Accuracy
+\end_layout
+
+\begin_layout Itemize
+Speed Accuracy
+\end_layout
+
+\begin_layout Itemize
+Track Direction
+\end_layout
+
+\begin_layout Itemize
+Speed
+\end_layout
+
+\begin_layout Itemize
+Vertical Speed
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Methodology
+\end_layout
+
+\begin_layout Standard
+For a named theorem or theorem-like environment you need to insert the name
+ through 
+\family sans
+Insert\SpecialChar menuseparator
+Short Title
+\family default
+, as done here.
+\end_layout
+
+\begin_layout Standard
+If you don't want a theorem or lemma name don't add one.
+\end_layout
+
+\begin_layout Standard
+And here's the proof!
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\family sans
+A single column figure goes here
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Captions go 
+\emph on
+under
+\emph default
+ the figure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement htbp
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Table captions go 
+\emph on
+above
+\emph default
+ the table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+delete
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+this
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+example
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+table
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+bla bla
+\end_layout
+
+\begin_layout Section
+First appendix
+\end_layout
+
+\begin_layout Standard
+Citation: 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Second appendix
+\end_layout
+
+\begin_layout Section*
+Acknowlegment
+\end_layout
+
+\begin_layout Standard
+bla bla
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remember though that your final submission is supposed to have all the bibliogra
+phy entries embedded in the \SpecialChar LaTeX
+-file.
+ This means you eventually have to copy the .bbl file into the latex file
+ and remove the bibtex lines.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "IEEEabrv,IEEEexample,../Bibliography"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
