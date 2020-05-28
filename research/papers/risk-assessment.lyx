@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -68,6 +70,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -76,7 +79,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -163,6 +169,7 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -189,6 +196,7 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
+literal "false"
 
 \end_inset
 
@@ -219,6 +227,7 @@ Name is with the Department of ..., ...
 \begin_inset CommandInset href
 LatexCommand href
 target "xxx@xxx.xxx"
+literal "false"
 
 \end_inset
 
@@ -407,6 +416,7 @@ Joint Authorities on Rulemaking for Unmanned Systems (JARUS) Specific Operations
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JARUS-SORA/JAR-DEL-WG6-D.04"
+literal "true"
 
 \end_inset
 
@@ -453,6 +463,7 @@ This operational scenario detailed in
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JARUS-SORA/STS-01"
+literal "true"
 
 \end_inset
 
@@ -485,6 +496,7 @@ Airspace: uncontrolled (F or G)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JARUS-SORA/JAR-DEL-WG6-D.04"
+literal "true"
 
 \end_inset
 
@@ -523,6 +535,7 @@ This operational scenario detailed in
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JARUS-SORA/STS-02"
+literal "true"
 
 \end_inset
 
@@ -555,6 +568,7 @@ Airspace: reserved airspace for operation
 \begin_inset CommandInset citation
 LatexCommand cite
 key "JARUS-SORA/JAR-DEL-WG6-D.04"
+literal "true"
 
 \end_inset
 
@@ -582,6 +596,22 @@ II
 \begin_layout Standard
 and proceeds to detail the operational mitigations, operator provisions,
  and technical provisions for such an operation.
+\end_layout
+
+\begin_layout Subsection
+NASA UTM
+\end_layout
+
+\begin_layout Subsection
+U-Space EU ConOps v2.0
+\end_layout
+
+\begin_layout Subsection
+Comparison
+\end_layout
+
+\begin_layout Subsection
+Scope of this work
 \end_layout
 
 \begin_layout Section
@@ -763,6 +793,7 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
+literal "true"
 
 \end_inset
 

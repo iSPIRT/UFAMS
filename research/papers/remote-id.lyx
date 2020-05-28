@@ -178,6 +178,34 @@ literal "false"
 
 \end_inset
 
+, Abhiroop
+\begin_inset space ~
+\end_inset
+
+Bhatnagar
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Abhiroop
+\begin_inset space ~
+\end_inset
+
+Bhatnagar is with AlgoPixel Technologies, India, e-mail: 
+\begin_inset CommandInset href
+LatexCommand href
+name "abhiroop@algopixel.tech"
+target "abhiroop@algopixel.tech"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
 , Rakesh
 \begin_inset space ~
 \end_inset
@@ -210,7 +238,7 @@ literal "false"
 \begin_inset space ~
 \end_inset
 
-Third
+Fourth
 \begin_inset space ~
 \end_inset
 
@@ -432,19 +460,6 @@ Benefits of adopting ASTM; changes to the existing DSP/UFII architecture
  to work with ASTM.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-4-6 weeks
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Remote ID
 \end_layout
@@ -539,10 +554,6 @@ The DigitalSky portal is the DigitalSky Service Provider portal that would
 Integrating ASTM Remote ID
 \end_layout
 
-\begin_layout Standard
-Concerns
-\end_layout
-
 \begin_layout Subsection
 ID
 \end_layout
@@ -575,9 +586,15 @@ how should component changes by manufacturer or owner be treated
 \end_deeper
 \begin_layout Enumerate
 Possibility of provision for Remote Id for Non-NPNT compliant drones with
- DAN 
+ DAN
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Can Remote ID be decoupled from UIN & DAN?
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Privacy
 \end_layout
@@ -605,7 +622,33 @@ Network ID
 \end_layout
 
 \begin_layout Standard
-TBD: Need to finalize information flow from Drone/GCS -> DSP -> UFII
+TBD: Need to finalize information flow from Drone/GCS 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ DSP 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ UFII
+\end_layout
+
+\begin_layout Subsubsection
+Remote ID Data
+\end_layout
+
+\begin_layout Enumerate
+UAS Id Type should be Registration Id.
+ It can be UIN for NPNT-compliant drones or DAN for non-NPNT compliant drones
+\end_layout
+
+\begin_layout Enumerate
+By default, all fields as listed in Table 1 of ASTM Remote Id Spec can be
+ public.
+ Possible exceptions could be Operator Position and Identity.
+ Need to come up with an encryption mechanism to transmit sensitive data
+ which should only be accessible to authorized entities.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -656,7 +699,10 @@ Programmability
 
 \begin_layout Enumerate
 Who should be able to program the remote ID into hardware: Manufacturer?
- Is it One-Time-Programmable?
+\end_layout
+
+\begin_layout Enumerate
+Is it One-Time-Programmable?
 \end_layout
 
 \begin_layout Enumerate
@@ -676,6 +722,36 @@ Is it possible to have a cryptographically secure process for this similar
  to NPNT?
 \end_layout
 
+\begin_layout Subsection
+Adoption
+\end_layout
+
+\begin_layout Enumerate
+What should the timeline be?
+\end_layout
+
+\begin_layout Enumerate
+Level of requirements (see https://www.ietf.org/rfc/rfc2119.txt) by use case
+\end_layout
+
+\begin_layout Enumerate
+Survey of business cases and cost to stakeholders, primarily Manufacturers
+\end_layout
+
+\begin_layout Enumerate
+Infrastructure for enablement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+anti-UAS applications
+\end_layout
+
+\begin_layout Enumerate
+???
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Recommendations
 \end_layout
