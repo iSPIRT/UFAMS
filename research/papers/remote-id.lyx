@@ -628,6 +628,15 @@ Who should be able to program the remote ID into hardware: Manufacturer?
  Is it One-Time-Programmable?
 \end_layout
 
+\begin_layout Subsubsection
+Adoption
+\end_layout
+
+\begin_layout Standard
+How would existing drones without any compliant RemoteID hardware become
+ compliant?
+\end_layout
+
 \begin_layout Section
 Recommendations
 \end_layout
@@ -642,6 +651,10 @@ Standardisation
 
 \begin_layout Subsection
 Policy making
+\end_layout
+
+\begin_layout Standard
+Adoption timeline
 \end_layout
 
 \begin_layout Section

@@ -951,7 +951,14 @@ FAA NPRM on Remote Identification of Unmanned Aircraft Systems
 \end_layout
 
 \begin_layout Standard
-The NPRM was released by FAA on 12 December 2019.
+The NPRM
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FAA-2019-1100"
+
+\end_inset
+
+ was released by FAA on 12 December 2019.
  The NPRM is meant to be a precursor of regulations which would govern operation
  of unmanned aircrafts in the US airspace.
  Its focus is on adding a capability for the law enforcement agencies to
