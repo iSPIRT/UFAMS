@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -26,6 +26,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -68,6 +70,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -76,7 +79,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
@@ -162,6 +168,7 @@ This report describes a Remote Identification Scheme for Unmanned Aircraft
 LatexCommand nomenclature
 symbol "ASTM"
 description "American Society for Testing and Materials"
+literal "true"
 
 \end_inset
 
@@ -295,6 +302,7 @@ LatexCommand href
 name "abhiroop@algopixel.tech"
 target "abhiroop@algopixel.tech"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -332,6 +340,7 @@ LatexCommand href
 name "sayandeep@deepcyan.ai"
 target "sayandeep@deepcyan.ai"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -369,6 +378,7 @@ LatexCommand href
 name "rakesh.vohra@unifly.aero"
 target "rakesh.vohra@unifly.aero"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -867,6 +877,7 @@ NPNT
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RPASGM2020"
+literal "true"
 
 \end_inset
 
@@ -878,6 +889,7 @@ ASTM Remote ID Specification
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ASTM:F3411:19"
+literal "true"
 
 \end_inset
 
@@ -932,7 +944,24 @@ Additional hardware requirements
 \end_layout
 
 \begin_layout Section
-Remote Id Standards Across The Globe 
+Remote ID
+\end_layout
+
+\begin_layout Subsection
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop Start
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -946,8 +975,450 @@ Globally, there are two standards proposed till date on remote identification
  similarities and differences.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Use cases
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Brief description and Use Cases
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are two types of Remote ID: Broadcast Remote ID and Network Remote
+ ID, with differences in the underlying technologies and use cases.
+ The two are not mutually exclusive – UAS with Networked Remote ID are usually
+ (but not necessarily) expected to broadcast their ID as well.
+\end_layout
+
+\begin_layout Standard
+Broadcast Remote ID refers to the transmission of (mainly identification)
+ data, similar to an electronic licence plate concept, with no specific
+ destination or recipient.
+ The data is typically broadcast over Bluetooth and can be received by anyone
+ within broadcast range, currently typically limited to 200 m (BLE 4.0).
+ No special infrastructure is required to enable Broadcast Remote ID – the
+ main requirements are appropriate (add-on or built-in) broadcasting capability
+ on the UAS, and a smart phone with a suitable app for the receiver of the
+ data.
+ 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+(To be done - distinguish between how/what the general public and authorities
+ can see.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Network Remote ID refers to the transmission of (identification, location,
+ flight plan…) data from the UAS to be made available to authorised persons
+ anywhere in the world.
+ This could be enabled over various technologies, e.g.
+ LTE (4G, going to 5G) and SatCom (all directly from the UAS) and RF (via
+ the GCS, and then with some limitations, detailed later in this paper).
+ Once received, e.g over the telecom network, this information, which is
+ practically real time, can be made available to appropriate consumers of
+ such data.
+ Subject to the availability of the telecom network in the vicinity of the
+ UAS, there is no limit to the range of a Network Remote ID solution.
+ To address short periods during which the UAS might be out of telecom range,
+ data buffering is envisaged.
+\end_layout
+
+\begin_layout Standard
+More details of the data typically broadcast are indicated in Annexure …
+\end_layout
+
+\begin_layout Subsubsection
+Broadcast Remote ID
+\end_layout
+
+\begin_layout Itemize
+Government and Civil identification of UAS for safety, security and compliance.
+\end_layout
+
+\begin_layout Itemize
+Increase UAS remote pilot accountability by removing anonymity (while preserving
+ operational privacy).
+\end_layout
+
+\begin_layout Itemize
+Enabler of operations over people, addresses citizen concerns about over
+ flying UAS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop Use case diagrams and descriptions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BRID-UC01
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BRID-UC02
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+BRID-UC03
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Network Remote ID
+\end_layout
+
+\begin_layout Itemize
+Real time availability of current location and tracking information.
+\end_layout
+
+\begin_layout Itemize
+Automated Flight Logging.
+ (= powerful incentive for the pilot to ensure that the UAS is used in a
+ compliant and legal manner).
+\end_layout
+
+\begin_layout Itemize
+Automatic Compliance Management: in case of violation, error messages could
+ be automatically generated.
+\end_layout
+
+\begin_layout Itemize
+Connection with ATM.
+ A feed of planned and actual UAS positions could be sent to the Civil and
+ Military ATM for situational awareness for their use.
+\end_layout
+
+\begin_layout Itemize
+Tactical deconfliction.
+ Data on planned and actual UAS position is needed for tactical deconfliction.
+ Warning alerts could be generated in case the separation is likely to be
+ inadequate.
+\end_layout
+
+\begin_layout Itemize
+Enabling BVLOS ,automated and autonomous operations.
+ In order to perform BVLOS, automated and autonomous operations, which normally
+ involve flying beyond the range of the GCS link, in a safe way, real time
+ situational awareness is needed, which can be provided through Network
+ Remote ID based on telecom.
+ This is fundamentally far more robust and with a more viable range than
+ via a GCS based solution…
+\end_layout
+
+\begin_layout Itemize
+C-UAS.
+ For effective C-UAS around sensitive installations, (Airports, Defence
+ installations…), Network Remote ID enables Friend/Foe identification in
+ real time.
+\end_layout
+
+\begin_layout Itemize
+Black box functionality – even in the situation that the UAS were to be
+ lost or destroyed, vital data would be accessible.
+\end_layout
+
+\begin_layout Itemize
+Ease of differentiation between manned aircraft and UAS.
+ At the ICAO conference in Montreal in 2019 ICAO safety experts announced
+ that due to safety considerations, the use of ADS-B out should be reserved
+ for manned aircraft, while LTE/5G and BLE can be safely used for UAS.
+\end_layout
+
+\begin_layout Itemize
+Data security.
+ If required, the tracking information could be kept entirely within the
+ implementing country (cf tracking via GCS, where there is no easy method
+ of knowing where the information resides abroad).
+\end_layout
+
+\begin_layout Standard
+There are also some additional India specific benefits.
+ A high percentage of drones in India fly under the radar, without any registrat
+ion, as their design is non NPNT compliant.
+ These non-registered drones pose a huge challenge to safety and national
+ security.
+ A well thought out Network Remote ID programme could bring all drones under
+ the purview of the regulatory authorities and lead to enhanced safety and
+ security for all.
+ There could be several ways of reaching this objective, using for example
+ DAN , SIM Card number…Whether such registration would be considered as
+ full compliance to CAR would be a policy matter, but at least the Registration
+ would be a big step forward.
+\end_layout
+
+\begin_layout Standard
+Through such a programme India could achieve Real time availability of location
+ and tracking information, even for non-NPNT compliant UAS.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop Use case diagrams and descriptions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+NRID-UC01
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+NRID-UC02
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+NRID-UC03
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 FAA NPRM on Remote Identification of Unmanned Aircraft Systems 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop Start
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -955,6 +1426,7 @@ The NPRM
 \begin_inset CommandInset citation
 LatexCommand cite
 key "FAA-2019-1100"
+literal "true"
 
 \end_inset
 
@@ -1152,26 +1624,446 @@ Vertical Speed
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ASTM (American Society for Testing and Materials) is an international standards
+ organization that develops and publishes technical standards for a wide
+ range of products and services.
+ The ASTM F38 committee on Unmanned Aircraft Systems has published the ASTM
+ F3411-19 Remote ID standard, currently the only standard covering tracking
+ and remote identification.
+ The ASTM F3411-19 standard has been arrived at after many years of research
+ and discussions between … It is open source and designed to be interoperable.
+ As such it is widely expected to be adopted globally.
+ This will drive down the hardware costs and allow interoperability.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Other Remote ID specifications, policies and regulation
+\end_layout
+
+\begin_layout Subsection
+Comparison ASTM vs others
+\end_layout
+
+\begin_layout Subsection
+Why ASTM?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which standard - should India adopt the ASTM standard?
+\end_layout
+
+\begin_layout Standard
+The ASTM standard is currently the only published standard.
+ It has also received support from ICAO.
+\end_layout
+
+\begin_layout Standard
+The standard has been published after several years of study and meets the
+ need of inducting UAS in a safe way.
+ It is therefore proposed that, unless there are strong reasons to deviate,
+ the ASTM standard should be adopted in India.
+ For India, some of the advantages of adopting the ASTM standard are speed
+ and international interoperability.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Methodology
+UFII/DSP/NPNT ecosystem 
 \end_layout
 
 \begin_layout Standard
-For a named theorem or theorem-like environment you need to insert the name
- through 
-\family sans
-Insert\SpecialChar menuseparator
-Short Title
-\family default
-, as done here.
+The mission of Digital Sky is to create a completely digital, paperless,
+ and presenceless process, thus fast-forwarding to a future of on-demand
+ seamless permissions for RPAS, operators, and pilots.
+\end_layout
+
+\begin_layout Subsection
+Overview
+\end_layout
+
+\begin_layout Subsection
+UFII
 \end_layout
 
 \begin_layout Standard
-If you don't want a theorem or lemma name don't add one.
+The Unified Flight Information Interface is an effort to integrate the airspaces
+ of manned and unmanned aircraft systems at the governmental level under
+ the auspices of the Airports Authority of India (AAI).
+ This interface would coordinate data exchange between various security
+ agencies, the DGCA, the Aeronautical Telecommunication Network, the Aeronautica
+l Fixed Telecommunication Network, the Air Defense Units, etc.
+ The purpose of this integration is to enable air traffic management in
+ a concerted fashion.
 \end_layout
 
 \begin_layout Standard
-And here's the proof!
+The UFII will enable private innovators to provide services for unmanned
+ air traffic management.
+ Such innovators are termed as DigitalSky Service Providers (DSP).
+ DSPs would in their regions of operation coordinate with RPAS manufacturers,
+ operators and the RPAS’s wherever possible to maintain conformance with
+ Civil Aviation Requirements and RPAS Guidance Manual.
+ The UFII would also define the data exchange formats for communication
+ between itself and DSPs and between DSPs for various scenarios to ensure
+ interoperability.
+\end_layout
+
+\begin_layout Subsection
+DigitalSky Service Providers
+\end_layout
+
+\begin_layout Standard
+While the final decisions for most critical processes such as Flight Plan
+ approval, etc.
+ would rest with the UFII, DSPs would provide a valuable intermediate layer
+ by enabling informed flight planning and operations by assessing risks
+ associated with flight plans, providing terrain, mapping & weather data,
+ providing realtime information about constraints, directives, notifications,
+ non-conformance, active operations, and so forth.
+ They may also provide ancillary services enabling registration for RPAS
+ Manufacturers, Pilots, Operators and RPAS units.
+\end_layout
+
+\begin_layout Subsection
+DigitalSky
+\end_layout
+
+\begin_layout Standard
+The DigitalSky portal is the DigitalSky Service Provider portal that would
+ be operated by the AAI as a standard bearer for DSPs.
+\end_layout
+
+\begin_layout Section
+Integrating ASTM Remote ID
+\end_layout
+
+\begin_layout Subsection
+ID
+\end_layout
+
+\begin_layout Enumerate
+UIN can be used as UAS ID in Remote Id message.
+ Technically, there is no need for UIN to change during the lifetime of
+ a drone.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+How should “lifetime” be defined
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+flight controller board or PKI/X.509 basis
+\end_layout
+
+\begin_layout Enumerate
+multiple PKI/X.509 per UAS
+\end_layout
+
+\begin_layout Enumerate
+how should component changes by manufacturer or owner be treated 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Possibility of provision for Remote Id for Non-NPNT compliant drones with
+ DAN
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Can Remote ID be decoupled from UIN & DAN?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Privacy
+\end_layout
+
+\begin_layout Subsubsection
+Civilian
+\end_layout
+
+\begin_layout Standard
+TBD 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Need to discuss on visibility of individual fields in Remote Id to stakeholders:
+ DSP, UFII, Defence, etc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Defence and Law Enforcement
+\end_layout
+
+\begin_layout Standard
+There should be a provision for security agencies to switch off Remote Id
+ Broadcast
+\end_layout
+
+\begin_layout Subsection
+Network ID
+\end_layout
+
+\begin_layout Standard
+TBD 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Need to finalize information flow from Drone/GCS 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ DSP 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ UFII
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Remote ID Data
+\end_layout
+
+\begin_layout Enumerate
+UAS Id Type should be Registration Id.
+ It can be UIN for NPNT-compliant drones or DAN for non-NPNT compliant drones
+\end_layout
+
+\begin_layout Enumerate
+By default, all fields as listed in Table 1 of ASTM Remote Id Spec can be
+ public.
+ Possible exceptions could be Operator Position and Identity.
+ Need to come up with an encryption mechanism to transmit sensitive data
+ which should only be accessible to authorized entities.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Encryption or omission?
+\end_layout
+
+\begin_layout Enumerate
+If encryption, who is the intended recipient?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Broadcast ID
+\end_layout
+
+\begin_layout Standard
+The broadcast protocol can be adopted as is from the ASTM standard 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Single vs.
+ Multi DSP scenarios: Any ramifications
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Which of the Remote ID data fields are mandatory vs optional?
+\end_layout
+
+\begin_layout Subsection
+Hardware
+\end_layout
+
+\begin_layout Subsubsection
+Bluetooth
+\end_layout
+
+\begin_layout Subsubsection
+WiFi
+\end_layout
+
+\begin_layout Subsubsection
+4G/LTE
+\end_layout
+
+\begin_layout Subsubsection
+Security aspects
+\end_layout
+
+\begin_layout Paragraph
+Programmability
+\end_layout
+
+\begin_layout Enumerate
+Who should be able to program the remote ID into hardware: Manufacturer?
+\end_layout
+
+\begin_layout Enumerate
+Is it One-Time-Programmable?
+\end_layout
+
+\begin_layout Enumerate
+What if it is an add-on hw module?
+\end_layout
+
+\begin_layout Enumerate
+What if it is part of UAS Model?
+\end_layout
+
+\begin_layout Enumerate
+Perhaps manufacturer should have an auditable process 
+\end_layout
+
+\begin_layout Enumerate
+Is it possible to have a cryptographically secure process for this similar
+ to NPNT?
+\end_layout
+
+\begin_layout Subsection
+Adoption
+\end_layout
+
+\begin_layout Enumerate
+How would existing drones without any compliant RemoteID hardware become
+ compliant?
+\end_layout
+
+\begin_layout Enumerate
+What should the timeline be?
+\end_layout
+
+\begin_layout Enumerate
+Level of requirements
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Use https://www.ietf.org/rfc/rfc2119.txt
+\end_layout
+
+\end_inset
+
+ by use case
+\end_layout
+
+\begin_layout Enumerate
+Survey of business cases and cost to stakeholders, primarily Manufacturers
+\end_layout
+
+\begin_layout Enumerate
+Infrastructure for enablement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+anti-UAS applications
+\end_layout
+
+\begin_layout Enumerate
+???
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Recommendations
+\end_layout
+
+\begin_layout Subsection
+Regulation changes
+\end_layout
+
+\begin_layout Subsection
+Standardisation 
+\end_layout
+
+\begin_layout Subsection
+Policy making
+\end_layout
+
+\begin_layout Standard
+Adoption timeline
 \end_layout
 
 \begin_layout Section
@@ -1309,6 +2201,7 @@ Citation:
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
+literal "true"
 
 \end_inset
 

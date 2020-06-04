@@ -606,43 +606,44 @@ NASA UTM
 U-Space EU ConOps v2.0
 \end_layout
 
-\begin_layout Subsection
-Comparison
+\begin_layout Standard
+Swarms
 \end_layout
 
 \begin_layout Subsection
 Scope of this work
 \end_layout
 
+\begin_layout Standard
+Review of previous work
+\end_layout
+
+\begin_layout Standard
+New operational scenarios
+\end_layout
+
+\begin_layout Standard
+Constraints in the Indian ecosystem
+\end_layout
+
 \begin_layout Section
-Methodology
+Risk Assessment Strategies
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Theorem name
+\begin_layout Subsection
+Comparison of Scenarios
 \end_layout
 
-\end_inset
-
-For a named theorem or theorem-like environment you need to insert the name
- through 
-\family sans
-Insert\SpecialChar menuseparator
-Short Title
-\family default
-, as done here.
+\begin_layout Standard
+??
 \end_layout
 
-\begin_layout Lemma
-If you don't want a theorem or lemma name don't add one.
+\begin_layout Subsection
+Comparison of Strategies
 \end_layout
 
-\begin_layout Proof
-And here's the proof!
+\begin_layout Standard
+EU - ARC/GRC
 \end_layout
 
 \begin_layout Section
