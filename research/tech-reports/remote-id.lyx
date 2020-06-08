@@ -1035,13 +1035,15 @@ Broadcast Remote ID refers to the transmission of (mainly identification)
  main requirements are appropriate (add-on or built-in) broadcasting capability
  on the UAS, and a smart phone with a suitable app for the receiver of the
  data.
+ Intel..
+ DSSPs ..interoperable ..
  
 \begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
-(To be done - distinguish between how/what the general public and authorities
- can see.)
+To be done - distinguish between how/what the general public and authorities
+ can see.
 \end_layout
 
 \end_inset
@@ -1078,8 +1080,17 @@ Government and Civil identification of UAS for safety, security and compliance.
 \end_layout
 
 \begin_layout Itemize
-Increase UAS remote pilot accountability by removing anonymity (while preserving
- operational privacy).
+Increase UAS remote pilot accountability by removing anonymity 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+while preserving operational privacy
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -1281,6 +1292,7 @@ ion, as their design is non NPNT compliant.
 \begin_layout Standard
 Through such a programme India could achieve Real time availability of location
  and tracking information, even for non-NPNT compliant UAS.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1664,6 +1676,21 @@ ASTM (American Society for Testing and Materials) is an international standards
 \end_layout
 
 \begin_layout Standard
+In this context we would like to mention that Intel Corporation, which has
+ been one of the contributors to arriving at the ASTM standard, has made
+ available the source code of its Open Drone ID app.
+ Using apps based on this open source code, any citizen can scan her environment
+ and learn the BLE address ( serial number ) of a nearby UAS which is equipped
+ with an ASTM compliant transmitter.
+ This app can also be used to verify whether the transmitting hardware is
+ ASTM compliant.
+ This development will help to ensure that open source, ASTM compliant UAS
+ and add-on transmitters are truly interoperable.
+ (Links https://www.opendroneid.org/ and https://github.com/opendroneid/receiver-an
+droid ).
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Greyedout
 status open
 
@@ -1717,6 +1744,13 @@ The standard has been published after several years of study and meets the
  the ASTM standard should be adopted in India.
  For India, some of the advantages of adopting the ASTM standard are speed
  and international interoperability.
+\end_layout
+
+\begin_layout Standard
+It is understood that European Committee for Standardization (CEN), through
+ ASD-STAN is also working on a standard which is likely to closely resemble
+ the ASTM.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1843,6 +1877,82 @@ Can Remote ID be decoupled from UIN & DAN?
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Possibility of provision of Remote ID for non-NPNT compliant drones.
+\end_layout
+
+\begin_layout Standard
+It is strongly recommended that the concepts of compliance and identification
+ should be separately tracked.
+ A comparison would be: a car on the road must have always a licence plate
+ (identity); if it does not pass a pollution control, or has faulty brakes,
+ it is not compliant to traffic rules.
+ Broadcast, and in particular Network Remote ID is inclusive rather than
+ exclusive.
+ 
+\end_layout
+
+\begin_layout Standard
+While the ASTM standard defines the minimum fields, in practice and to adhere
+ to other prevailing ( e.g.
+ telecom) regulation a typical Network Remote ID transmitter could (does)
+ broadcast several fields through which the identity of the UAS and its
+ operator can be quickly obtained :
+\end_layout
+
+\begin_layout Enumerate
+A UAS ID, typically assigned by the authorities.
+ In India this could be the UIN or the DAN 
+\end_layout
+
+\begin_layout Enumerate
+A unique Operator ID, typically assigned by the authorities.
+ In India this could be Aadhar / Udyog Aadhar / ROC CIN or UAOP (delinked
+ from UIN/NPNT).
+ 
+\end_layout
+
+\begin_layout Enumerate
+A unique serial number, based on the Mac Address of the BLE chipset in the
+ Broadcast/Network Remote ID device.
+ 
+\end_layout
+
+\begin_layout Enumerate
+IMEI of the LTE device (only over Network).
+ 
+\end_layout
+
+\begin_layout Enumerate
+IMSI of the SIM Card in the LTE device (only over Network).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Privacy
 \end_layout
@@ -1864,6 +1974,26 @@ Need to discuss on visibility of individual fields in Remote Id to stakeholders:
 \end_inset
 
 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+To be elaborated
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -1873,6 +2003,47 @@ Defence and Law Enforcement
 \begin_layout Standard
 There should be a provision for security agencies to switch off Remote Id
  Broadcast
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is very possible that Defence UAVs may be fitted with Network Remote
+ ID for facilitating identification of Friend/Foe, tracking of Defence Drones
+ for Defence purposes, tactical deconfliction, etc.
+ In such situations the provision typically exists for the Defence operator
+ to either switch off the transmission altogether ( = no visibility of the
+ UAS ) or to have tracking data of Defence UAVs filtered out from civilian
+ monitoring systems and have it only visible to authorised Defence personnel.
+ Details are beyond the scope of this paper.
+ Defence UAVs have special needs and use cases.
+ It is therefore recommended that initially Defence UAVs should be kept
+ out of the purview of any Remote ID programme ,knowing however that such
+ a programme could be of use for Defence purposes in the future.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1929,6 +2100,106 @@ If encryption, who is the intended recipient?
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+an extension to the Digital Sky concept.
+\end_layout
+
+\begin_layout Standard
+How would an ASTM based Network Remote ID work with the existing DSP/UFII
+ architecture?
+\end_layout
+
+\begin_layout Standard
+The basic architecture of a viable solution would require:
+\end_layout
+
+\begin_layout Standard
+-A built-in or add-on hardware device that regularly sends a set of flight
+ parameters, including but not limited to a drone’s location, barometric
+ altitude, the drone’s serial number (ANSI/CTA-2063 Physical Serial Number
+ format) and the operator registration ID over a wireless network to a tracking
+ data collector.
+\end_layout
+
+\begin_layout Standard
+-The tracking data collector is a dedicated server that processes and optionally
+ stores the flight data.
+ These data are forwarded to applications that subscribe to the flight data,
+ such as UTM systems.
+\end_layout
+
+\begin_layout Standard
+-Facilitating regulation which would require all UAS (or all UAS fulfilling
+ a certain set of criteria) to be mandatorily fitted with a (built-in or
+ add-on) Network Remote ID transmitting device and regulations requiring
+ the device to be actually transmitting.
+ In the United States, the FAA in its draft Regulation has proposed that
+ virtually all UAS should be covered, which perhaps goes too far.
+ A proposed approach for India is indicated elsewhere in this article in
+ Section … 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+tbd and w
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+-Facilitating regulation which would govern the activities of the location
+ data collector service providers (DCSP).
+ Such regulation would need to cover, e.g., what data the DCSP would supply
+ to DSSPs (e.g.
+ for tactical deconfliction), what data would be supplied to the UFII /
+ Digital Sky, etc.
+ Such regulation would also need to take into consideration possible business
+ models which would enable the smooth running of the Network Remote ID /
+ Tracking infrastructure.
+ A possible outline of a business model and associated regulation would
+ be the subject matter of 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+a forthcoming article/ is indicated elsewhere in this article in Section
+ … tbd and w
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Broadcast ID
 \end_layout
@@ -1958,6 +2229,41 @@ Hardware
 
 \begin_layout Subsubsection
 Bluetooth
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh Start
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the BLE broadcast, the protocol can be adopted as-is from the ASTM standard.
+\end_layout
+
+\begin_layout Standard
+For telecom transmission protocol (LTE and SatCom), AES-128 encryption of
+ the UDP datagram is typically used.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Rakesh End
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
