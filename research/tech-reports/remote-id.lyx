@@ -8,6 +8,8 @@
 \begin_preamble
 % for subfigures/subtables
 \usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage{wasysym}
+\usepackage{mathtools}
 \end_preamble
 \options journal
 \use_default_options false
@@ -179,19 +181,12 @@ literal "true"
 
 \begin_layout Abstract
 Keywords: Unmanned Aviation, Unmanned Aircraft Systems, Identification,
- Risk Assessment, Law Enforcement
+ Risk Assessment, Law Enforcement, Counter-UAS
 \end_layout
 
 \begin_layout Abstract
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
-
-\end_inset
-
-
-\begin_inset CommandInset nomencl_print
-LatexCommand printnomenclature
-set_width "auto"
 
 \end_inset
 
@@ -202,7 +197,438 @@ set_width "auto"
 Working Group
 \end_layout
 
+\begin_layout Paragraph*
+Overview 
+\end_layout
+
 \begin_layout Standard
+This working group meets almost weekly to discuss the roles, responsibilities
+ and activities to be performed by a DigitalSky Service Provider (DSP) in
+ the context of Indian drone industry.
+ It also aims to document the ways in which a DSP interacts with other stakehold
+ers in the industry, namely, manufacturers, operators, pilots, UFII, DGCA,
+ and so forth.
+ The documentation would be put through as recommendations to DGCA, iSpirt,
+ and other relevant parties as it matures.
+\end_layout
+
+\begin_layout Paragraph*
+Membership
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+iSpirt, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asteria, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Algopixel Technologies, India
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HexCod, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Deepcyan Software, India
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark[
+\backslash
+value{footnote}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Curl Analytics, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Skylark Drones, India
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark[
+\backslash
+value{footnote}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avianco, India
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark[
+\backslash
+value{footnote}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Drone Federation of India, India
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark[
+\backslash
+value{footnote}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IdeaForge, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+UniFly, Belgium
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark[
+\backslash
+value{footnote}]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AUS, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Drone Aerospace, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Omnipresent Tech, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+QTPI, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IIT Bombay, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IISc, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+addtocounter{footnote}{-5}
+\backslash
+stepcounter{footnote}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotetext{Opinions expressed in published materials may not represent
+ the views of organisations except as marked.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Topics
+\end_layout
+
+\begin_layout Standard
+Regulation, policy making, risk assessment & reduction, deconfliction, operation
+al transparency, management and privacy in unmanned aviation.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Meetings
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Standards Track
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "Meet"
+target "https://meet.google.com/urz-pekp-rwr"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fridays 1900-2000 IST
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Research Track
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "Skype"
+target "https://join.skype.com/RkNeUB8wNvzx"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wednesdays 1900-2000 IST
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
 Links
 \end_layout
 
@@ -234,22 +660,20 @@ https://groups.google.com/forum/#!contactowner/drone-dsp
 )
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
+\begin_layout Chapter*
+Authors
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="3">
+<lyxtabular version="3" rows="7" columns="3">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -260,7 +684,7 @@ Name
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -271,7 +695,7 @@ Email
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -289,6 +713,19 @@ Organisation
 
 \begin_layout Plain Layout
 Abhiroop Bhatnagar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -315,23 +752,38 @@ literal "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Algopixel, India
+Algopixel Technologies, India
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Sayandeep Purkayasth
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotemark[
+\backslash
+value{footnote}]
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -349,7 +801,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -360,7 +812,7 @@ Deepcyan Software, India
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -369,7 +821,7 @@ Rakesh Vohra
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -387,7 +839,7 @@ literal "false"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -398,58 +850,114 @@ UniFly, Belgium
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+Nihal Mohan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "nihalm@skylarkdrones.com"
+target "nihalm@skylarkdrones.com"
+type "mailto:"
+literal "false"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+Skylark Drones, India
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+Shravan Vatambeti
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "shravan@avianco.in"
+target "shravan@avianco.in"
+type "mailto:"
+literal "false"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+Avianco, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Smit Shah
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "smit@dronefederation.in"
+target "smit@dronefederation.in"
+type "mailto:"
+literal "false"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Drone Federation of India, India
 \end_layout
 
 \end_inset
@@ -462,376 +970,15 @@ UniFly, Belgium
 
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Contributing Authors
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float table
-wide false
-sideways false
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
 
-\series bold
-Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Email
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Organisation
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Group Membership (non-contributing)
-\end_layout
-
-\end_inset
-
-
+\backslash
+footnotetext{Authors for correspondence.}
 \end_layout
 
 \end_inset
@@ -840,6 +987,12 @@ Group Membership (non-contributing)
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
 
 \end_layout
 
@@ -1832,8 +1985,12 @@ The DigitalSky portal is the DigitalSky Service Provider portal that would
  be operated by the AAI as a standard bearer for DSPs.
 \end_layout
 
-\begin_layout Section
+\begin_layout Chapter
 Integrating ASTM Remote ID
+\end_layout
+
+\begin_layout Section
+Data
 \end_layout
 
 \begin_layout Subsection
@@ -2126,23 +2283,23 @@ How would an ASTM based Network Remote ID work with the existing DSP/UFII
 The basic architecture of a viable solution would require:
 \end_layout
 
-\begin_layout Standard
--A built-in or add-on hardware device that regularly sends a set of flight
+\begin_layout Itemize
+A built-in or add-on hardware device that regularly sends a set of flight
  parameters, including but not limited to a drone’s location, barometric
  altitude, the drone’s serial number (ANSI/CTA-2063 Physical Serial Number
  format) and the operator registration ID over a wireless network to a tracking
  data collector.
 \end_layout
 
-\begin_layout Standard
--The tracking data collector is a dedicated server that processes and optionally
+\begin_layout Itemize
+The tracking data collector is a dedicated server that processes and optionally
  stores the flight data.
  These data are forwarded to applications that subscribe to the flight data,
  such as UTM systems.
 \end_layout
 
-\begin_layout Standard
--Facilitating regulation which would require all UAS (or all UAS fulfilling
+\begin_layout Itemize
+Facilitating regulation which would require all UAS (or all UAS fulfilling
  a certain set of criteria) to be mandatorily fitted with a (built-in or
  add-on) Network Remote ID transmitting device and regulations requiring
  the device to be actually transmitting.
@@ -2162,8 +2319,8 @@ tbd and w
 
 \end_layout
 
-\begin_layout Standard
--Facilitating regulation which would govern the activities of the location
+\begin_layout Itemize
+Facilitating regulation which would govern the activities of the location
  data collector service providers (DCSP).
  Such regulation would need to cover, e.g., what data the DCSP would supply
  to DSSPs (e.g.
@@ -2228,7 +2385,7 @@ Hardware
 \end_layout
 
 \begin_layout Subsubsection
-Bluetooth
+Bluetooth & WiFi
 \end_layout
 
 \begin_layout Standard
@@ -2267,10 +2424,6 @@ status open
 \end_layout
 
 \begin_layout Subsubsection
-WiFi
-\end_layout
-
-\begin_layout Subsubsection
 4G/LTE
 \end_layout
 
@@ -2283,11 +2436,12 @@ Programmability
 \end_layout
 
 \begin_layout Enumerate
-Who should be able to program the remote ID into hardware: Manufacturer?
+Who should be able to program the remote ID into hardware: Manufacturer/Operator
+/Pilot?
 \end_layout
 
 \begin_layout Enumerate
-Is it One-Time-Programmable?
+Is it One-Time-Programmable? If not how do we secure reprogramming process?
 \end_layout
 
 \begin_layout Enumerate
@@ -2299,7 +2453,7 @@ What if it is part of UAS Model?
 \end_layout
 
 \begin_layout Enumerate
-Perhaps manufacturer should have an auditable process 
+Perhaps the programmer should have an auditable process
 \end_layout
 
 \begin_layout Enumerate
@@ -2316,10 +2470,69 @@ How would existing drones without any compliant RemoteID hardware become
  compliant?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Integrating with Remote ID hardware on market (to be imported, integrated
+ and tested)
+\end_layout
+
+\begin_layout Enumerate
+development of Remote ID chip/board in-house (open-sourced designs 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+insert cfs.
+\end_layout
+
+\end_inset
+
+ are available) & integration
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 What should the timeline be?
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+9 months
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+6 months: product development/integration, testing
+\end_layout
+
+\begin_layout Enumerate
+3 months compliance testing & approval
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+UFII-DSP infrastructure for enablement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Development of protocols (2 months)
+\end_layout
+
+\begin_layout Enumerate
+implementation (6 months)
+\end_layout
+
+\begin_layout Enumerate
+training law enforcement bodies (3 months - 2 years)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Leeway: 3 months
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 Level of requirements
 \begin_inset Foot
@@ -2338,38 +2551,945 @@ Use https://www.ietf.org/rfc/rfc2119.txt
 Survey of business cases and cost to stakeholders, primarily Manufacturers
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
-Infrastructure for enablement
+Manufacturers:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-anti-UAS applications
+R&D for in-house dev
 \end_layout
 
 \begin_layout Enumerate
-???
+Compliances & Import costs
 \end_layout
 
 \end_deeper
+\begin_layout Enumerate
+Operators
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Training
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pilot
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Training
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Law Enforcement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Additional Hardware
+\end_layout
+
+\begin_layout Enumerate
+DSP integration
+\end_layout
+
+\begin_layout Enumerate
+Training
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scenario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cf.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bluetooth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WiFi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3G/LTE+/Network
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+VLoS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SORA/STS01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BVLoS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SORA/STS02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+ 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Operational Scenario vs Compliance requirements: 
+\begin_inset Formula $\CIRCLE$
+\end_inset
+
+ Mandatory, 
+\begin_inset Formula $\LEFTcircle$
+\end_inset
+
+Recommended, 
+\begin_inset Formula $\varodot$
+\end_inset
+
+ Optional, 
+\begin_inset Formula $\varobslash$
+\end_inset
+
+ Not Recommended, 
+\begin_inset Formula $\varotimes$
+\end_inset
+
+ Forbidden
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Recommendations
 \end_layout
 
 \begin_layout Subsection
-Regulation changes
+Regulation
 \end_layout
 
 \begin_layout Subsection
-Standardisation 
+Standardisation
+\end_layout
+
+\begin_layout Standard
+Network Remote ID Protocol and Interface needs to be standardised and used
+ by DSP/UFII architecture and individual DSPs for:
+\end_layout
+
+\begin_layout Paragraph
+Identification
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Protocol & Interfaces
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Awareness
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Protocol & Interfaces
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Policy making
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 Adoption timeline
+\end_layout
+
+\begin_layout Paragraph
+Hobbyist and research sector
+\end_layout
+
+\begin_layout Standard
+FAA NPRM Public page notes 54K comments from the general public; concerns
+ raised include stifling innovation and the hobbyist sectors because of
+ increased compliance requirements for no added security (which is not strictly
+ true).
+ These sectors should be allowed certain leeway in compliance, at the same
+ time be made aware of liability concerns in case of mishaps.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Proposal #1
+\end_layout
+
+\begin_layout Standard
+Disposable Remote IDs should be allowed to be provisioned for such activities.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Proposal #2
+\end_layout
+
+\begin_layout Standard
+Decoupling Remote ID from UIN/DANs also allows such activities to take place
+ without need for excessive compliance, as remote ID hw can easily be moved
+ between UASs in this case after filing with a DSP.
 \end_layout
 
 \begin_layout Section
@@ -2498,16 +3618,48 @@ Conclusions
 bla bla
 \end_layout
 
+\begin_layout Chapter
+Appendix
+\end_layout
+
 \begin_layout Section
-First appendix
+Operational Scenarios
 \end_layout
 
 \begin_layout Standard
-Citation: 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "IEEEexample:beebe_archive,taleb:2012,bringhurst:2002"
-literal "true"
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Sayandeep: Include from 
+\end_layout
+
+\begin_layout Plain Layout
+EU: EASA Opinion Paper 05/2019
+\end_layout
+
+\begin_layout Plain Layout
+NASA: https://drive.google.com/file/d/1OzQeRPdMM7s51fZJxoNRIl_G-0QeHiTw/view?usp=s
+haring p48
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Sayandeep: Missing Scenarios
+\end_layout
+
+\begin_layout Plain Layout
+1.
+ Malicious Pilot
+\end_layout
 
 \end_inset
 
@@ -2515,7 +3667,181 @@ literal "true"
 \end_layout
 
 \begin_layout Section
-Second appendix
+Operational Use cases
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Sayandeep: Include from
+\end_layout
+
+\begin_layout Plain Layout
+NASA: https://drive.google.com/file/d/1OzQeRPdMM7s51fZJxoNRIl_G-0QeHiTw/view?usp=s
+haring pp79-80
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Architecture
+\end_layout
+
+\begin_layout Subsection
+Proposal #1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remote ID should be programmed in with a registered unique ID.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Options for ID:
+\end_layout
+
+\begin_layout Enumerate
+UIN
+\end_layout
+
+\begin_layout Enumerate
+DAN
+\end_layout
+
+\begin_layout Standard
+with a ID Type header specifying what type it is.
+ I believe there is a ID Type field already.
+\end_layout
+
+\begin_layout Standard
+The UAS must transmit Network RId packets to a DSP using APIs.
+ This allows airspace awareness.
+\end_layout
+
+\begin_layout Paragraph
+Open questions
+\end_layout
+
+\begin_layout Standard
+Are non-NPNT drones with DANs to be phased out, so pilots can be retrained
+ on NPNT compliant UASs? Is there a purpose to NPNT when we are allowing
+ DAN-registered UASs to fly? What happens if a remote ID module needs to
+ be replaced?
+\end_layout
+
+\begin_layout Subsection
+Proposal #2
+\end_layout
+
+\begin_layout Standard
+ID data for Remote ID should be akin to MAC for network hardware, which
+ is decoupled from UIN/DAN, etc.
+ Then within the DSP-UFII architecture, remote ID hardware will have to
+ be linked to UIN or DAN registry.
+\end_layout
+
+\begin_layout Paragraph
+Pros
+\end_layout
+
+\begin_layout Standard
+A Drone could potentially have multiple RemoteIDs devices for redundancy
+ or with differing operating parameters.
+ One-time programming works, a lot of security problems averted.
+ UUIDv4 would ensure no conflict.
+ How many bits is it? A new RId module will need to be registered against
+ UIN in case of replacement.
+\end_layout
+
+\begin_layout Paragraph
+Cons
+\end_layout
+
+\begin_layout Standard
+TBD
+\end_layout
+
+\begin_layout Section
+Protocols/Interfaces for Network RID
+\end_layout
+
+\begin_layout Subsection
+Proposal #1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Abhiroop's input below.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Open questions
+\end_layout
+
+\begin_layout Standard
+Is the use-case: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+General\ Public\ensuremath{\xrightarrow{\text{query UAS/Operation Authorisation by Network RId}}}DSP
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+one which must be addressed immediately, or when public demand for it is
+ apparent?
+\end_layout
+
+\begin_layout Section
+Supplementary Comments
+\end_layout
+
+\begin_layout Standard
+???
 \end_layout
 
 \begin_layout Section*
@@ -2527,20 +3853,6 @@ bla bla
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Remember though that your final submission is supposed to have all the bibliogra
-phy entries embedded in the \SpecialChar LaTeX
--file.
- This means you eventually have to copy the .bbl file into the latex file
- and remove the bibtex lines.
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"

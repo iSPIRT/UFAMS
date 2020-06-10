@@ -83,7 +83,7 @@
 \math_numbering_side default
 \quotes_style english
 \dynamic_quotes 0
-\papercolumns 2
+\papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
@@ -254,6 +254,478 @@ Risk Categorisation; Simulations (maybe in a subsequent study);
 Keywords: simplicity, beauty, elegance
 \end_layout
 
+\begin_layout Chapter*
+Working Group
+\end_layout
+
+\begin_layout Paragraph*
+Overview 
+\end_layout
+
+\begin_layout Standard
+This working group meets almost weekly to discuss the roles, responsibilities
+ and activities to be performed by a DigitalSky Service Provider (DSP) in
+ the context of Indian drone industry.
+ It also aims to document the ways in which a DSP interacts with other stakehold
+ers in the industry, namely, manufacturers, operators, pilots, UFII, DGCA,
+ and so forth.
+ The documentation would be put through as recommendations to DGCA, iSpirt,
+ and other relevant parties as it matures.
+\end_layout
+
+\begin_layout Paragraph*
+Membership
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Views expressed in published materials may not represent the views of organisati
+ons except for those marked by 
+\begin_inset Formula $\dagger$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+iSpirt, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Asteria, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Algopixel Technologies, India
+\family default
+
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+HexCod, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Deepcyan Software, India
+\family default
+
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Curl Analytics, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Skylark Drones, India
+\family default
+
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Avianco, India
+\family default
+
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Drone Federation of India, India
+\family default
+
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+IdeaForge, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+UniFly, Belgium
+\family default
+
+\begin_inset Formula $^{\dagger}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+AUS, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Drone Aerospace, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Omnipresent Tech, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+QTPI, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+IIT Bombay, India
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+IISc, India
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Organisations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Topics
+\end_layout
+
+\begin_layout Standard
+Regulation, policy making, risk assessment & reduction, deconfliction, operation
+al transparency, management and privacy in unmanned aviation.
+\end_layout
+
+\begin_layout Paragraph*
+Meetings
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Standards Track
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "Meet"
+target "https://meet.google.com/urz-pekp-rwr"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Fridays 1900-2000 IST
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Research Track
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+\begin_inset CommandInset href
+LatexCommand href
+name "Skype"
+target "https://join.skype.com/RkNeUB8wNvzx"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Wednesdays 1900-2000 IST
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Links
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+https://groups.google.com/forum/#!forum/drone-dsp
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+drone-dsp@googlegroups.com
+\family default
+ (members only
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Visit 
+\family typewriter
+https://groups.google.com/forum/#!contactowner/drone-dsp
+\family default
+ for membership.
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
 \begin_layout Chapter
 Introduction
 \end_layout
@@ -329,6 +801,25 @@ Standard Scenario 02 (JARUS-STS-02)
 
 \begin_layout Subsection
 NASA UTM
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+@Sayandeep: Include from https://docs.google.com/document/d/1eHDIJ4yoV9JgGWHc02Fyg
+wE4SounAoLkCo1Ykyhjjro/edit?usp=sharing &
+\end_layout
+
+\begin_layout Plain Layout
+NASA: https://drive.google.com/file/d/1OzQeRPdMM7s51fZJxoNRIl_G-0QeHiTw/view?usp=s
+haring pp48,79-80
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
