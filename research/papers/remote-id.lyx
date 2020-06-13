@@ -27,7 +27,7 @@
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
-\use_dash_ligatures false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -37,8 +37,10 @@
 \paperfontsize default
 \spacing single
 \use_hyperref true
-\pdf_title "Your Title"
-\pdf_author "Your Name"
+\pdf_title "Remote Identification for Unmanned Aircraft Systems"
+\pdf_author "DSP Working Group"
+\pdf_subject "Unmanned Aviation"
+\pdf_keywords "Index Terms--- Unmanned Aviation, Unmanned Aircraft Systems, Identification, Risk Assessment, Law Enforcement"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
@@ -178,6 +180,34 @@ literal "false"
 
 \end_inset
 
+, Abhiroop
+\begin_inset space ~
+\end_inset
+
+Bhatnagar
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Abhiroop
+\begin_inset space ~
+\end_inset
+
+Bhatnagar is with AlgoPixel Technologies, India, e-mail: 
+\begin_inset CommandInset href
+LatexCommand href
+name "abhiroop@algopixel.tech"
+target "abhiroop@algopixel.tech"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
 , Rakesh
 \begin_inset space ~
 \end_inset
@@ -210,7 +240,7 @@ literal "false"
 \begin_inset space ~
 \end_inset
 
-Third
+Fourth
 \begin_inset space ~
 \end_inset
 
@@ -245,59 +275,16 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-Journal of XXX
+Journal of the DSP Working Group
 \end_layout
 
 \end_inset
 
-Your Name 
-\begin_inset Flex Lowercase
-status open
 
-\begin_layout Plain Layout
-
-\emph on
-et al.
-\end_layout
-
-\end_inset
-
-: Your Title
 \end_layout
 
 \begin_layout Publication ID
-0000–0000/00$00.00
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-copyright
-\end_layout
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-2012 IEEE
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-only if you have one
-\end_layout
-
-\end_inset
-
-
+DSPWG/Papers/1
 \end_layout
 
 \begin_layout Abstract
@@ -432,19 +419,6 @@ Benefits of adopting ASTM; changes to the existing DSP/UFII architecture
  to work with ASTM.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-4-6 weeks
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Remote ID
 \end_layout
@@ -454,11 +428,19 @@ Introduction
 \end_layout
 
 \begin_layout Subsection
-ASTM Remote ID spec
+Use cases
 \end_layout
 
 \begin_layout Subsection
-Other Remote ID specs
+FAA NPRM
+\end_layout
+
+\begin_layout Subsection
+ASTM
+\end_layout
+
+\begin_layout Subsection
+Other Remote ID specifications, policies and regulation
 \end_layout
 
 \begin_layout Subsection
@@ -539,10 +521,6 @@ The DigitalSky portal is the DigitalSky Service Provider portal that would
 Integrating ASTM Remote ID
 \end_layout
 
-\begin_layout Standard
-Concerns
-\end_layout
-
 \begin_layout Subsection
 ID
 \end_layout
@@ -575,9 +553,15 @@ how should component changes by manufacturer or owner be treated
 \end_deeper
 \begin_layout Enumerate
 Possibility of provision for Remote Id for Non-NPNT compliant drones with
- DAN 
+ DAN
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+Can Remote ID be decoupled from UIN & DAN?
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Privacy
 \end_layout
@@ -587,8 +571,18 @@ Civilian
 \end_layout
 
 \begin_layout Standard
-TBD: Need to discuss on visibility of individual fields in Remote Id to
- stakeholders: DSP, UFII, Defence, etc.
+TBD 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Need to discuss on visibility of individual fields in Remote Id to stakeholders:
+ DSP, UFII, Defence, etc.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -605,19 +599,62 @@ Network ID
 \end_layout
 
 \begin_layout Standard
-TBD: Need to finalize information flow from Drone/GCS -> DSP -> UFII
+TBD 
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
+Need to finalize information flow from Drone/GCS 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ DSP 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ UFII
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Remote ID Data
+\end_layout
+
+\begin_layout Enumerate
+UAS Id Type should be Registration Id.
+ It can be UIN for NPNT-compliant drones or DAN for non-NPNT compliant drones
+\end_layout
+
+\begin_layout Enumerate
+By default, all fields as listed in Table 1 of ASTM Remote Id Spec can be
+ public.
+ Possible exceptions could be Operator Position and Identity.
+ Need to come up with an encryption mechanism to transmit sensitive data
+ which should only be accessible to authorized entities.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Encryption or omission?
+\end_layout
+
+\begin_layout Enumerate
+If encryption, who is the intended recipient?
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Broadcast ID
 \end_layout
 
 \begin_layout Standard
 The broadcast protocol can be adopted as is from the ASTM standard 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
+\begin_inset Note Greyedout
 status open
 
 \begin_layout Plain Layout
@@ -628,6 +665,10 @@ Single vs.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+Which of the Remote ID data fields are mandatory vs optional?
 \end_layout
 
 \begin_layout Subsection
@@ -656,7 +697,10 @@ Programmability
 
 \begin_layout Enumerate
 Who should be able to program the remote ID into hardware: Manufacturer?
- Is it One-Time-Programmable?
+\end_layout
+
+\begin_layout Enumerate
+Is it One-Time-Programmable?
 \end_layout
 
 \begin_layout Enumerate
@@ -676,6 +720,51 @@ Is it possible to have a cryptographically secure process for this similar
  to NPNT?
 \end_layout
 
+\begin_layout Subsection
+Adoption
+\end_layout
+
+\begin_layout Enumerate
+How would existing drones without any compliant RemoteID hardware become
+ compliant?
+\end_layout
+
+\begin_layout Enumerate
+What should the timeline be?
+\end_layout
+
+\begin_layout Enumerate
+Level of requirements
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Use https://www.ietf.org/rfc/rfc2119.txt
+\end_layout
+
+\end_inset
+
+ by use case
+\end_layout
+
+\begin_layout Enumerate
+Survey of business cases and cost to stakeholders, primarily Manufacturers
+\end_layout
+
+\begin_layout Enumerate
+Infrastructure for enablement
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+anti-UAS applications
+\end_layout
+
+\begin_layout Enumerate
+???
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Recommendations
 \end_layout
@@ -690,6 +779,10 @@ Standardisation
 
 \begin_layout Subsection
 Policy making
+\end_layout
+
+\begin_layout Standard
+Adoption timeline
 \end_layout
 
 \begin_layout Section
