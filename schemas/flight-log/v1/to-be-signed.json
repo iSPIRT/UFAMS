@@ -6,7 +6,7 @@
     "title": "Flight Log schema for Digital Sky",
     "required": [
 		"sequenceNo",
-		"flightPermitId",
+		"permissionArtefactId",
 		"previousSequenceNo",
 		"logEntries"
     ],
@@ -16,10 +16,10 @@
 			"type":"number",
 			"title": "Flight Log Sequence No"
 		 },
-		"flightPermitId":{
-			"$id":"/properties/flightPermitId",
+		"permissionArtefactId":{
+			"$id":"/properties/permissionArtefactId",
 			"type":"string",
-			"title": "Flight Permit Id"
+			"title": "Permission Artefact Id"
 		 },
 		 "previousSequenceNo": {
 			"$id": "#/properties/previousSequenceNo",
